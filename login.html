@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Animated Login Form</title>
+      <link rel="stylesheet" href="./css/signstyle.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <div class="container">
+         <header>Login Form</header>
+         <form action="./dynamic/login.php" method="post">
+            <div class="input-field">
+               <input type="text" required name="email">
+               <label>Email or Username</label>
+            </div>
+            <div class="input-field">
+               <input class="pswrd" type="password" required name="pass">
+               <span class="show">SHOW</span>
+               <label>Password</label>
+            </div>
+            <div class="button">
+               <div class="inner"></div>
+               <button type="submit">LOGIN</button>
+            </div>
+         </form>
+         <div class="signup">
+            Not a member? <a href="signup.html">Signup now</a>
+         </div>
+      </div>
+      <script>
+         var input = document.querySelector('.pswrd');
+         var show = document.querySelector('.show');
+         show.addEventListener('click', active);
+         function active(){
+           if(input.type === "password"){
+             input.type = "text";
+             show.style.color = "#1DA1F2";
+             show.textContent = "HIDE";
+           }else{
+             input.type = "password";
+             show.textContent = "SHOW";
+             show.style.color = "#111";
+           }
+         }
+      </script>
+   </body>
+</html>
