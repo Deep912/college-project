@@ -5,7 +5,7 @@
 * License: https://creativecommons.org/licenses/by/3.0/
 */ -->
 <!doctype html>
-
+<?php include ("./dynamic/connection.php") ; ?>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -84,9 +84,8 @@
 
 
     <div class="particlehead">
-      <!-- <img class="demo1" src="./bmw.jpg"> -->
+      
     </div>
-    <!-- <div class="container"> -->
       <div class="site-blocks-cover">
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
@@ -105,78 +104,45 @@
           </div>
         </div>
       </div>  
-      <!-- </div> -->
-
-
-      <section class="site-section">
-        <div class="container">
-          <div class="row">
-            <div class="col" data-aos="fade-in" data-aos-delay="0">
-              <img src="images/clients-05.svg" alt="Image" class="img-fluid">
-            </div>
-            <div class="col" data-aos="fade-in" data-aos-delay="100">
-              <img src="images/clients-02.svg" alt="Image" class="img-fluid">
-            </div>
-            <div class="col" data-aos="fade-in" data-aos-delay="200">
-              <img src="images/clients-03.svg" alt="Image" class="img-fluid">
-            </div>
-            <div class="col" data-aos="fade-in" data-aos-delay="300">
-              <img src="images/clients-01.svg" alt="Image" class="img-fluid">
-            </div>
-            <div class="col" data-aos="fade-in" data-aos-delay="400">
-              <img src="images/clients-04.svg" alt="Image" class="img-fluid">
-            </div>
-          </div>
-        </div>
-      </section>
-
-
+      
 
       <section class="site-section">
+      <h2 class="site-section-heading text-center">featured <span class="diffcolor"> cars </span></h2>
         <div class="container">
           <div class="row">
-            <div class="col-md-6 col-lg-4 mb-lg-0 mb-4">
-              <div class="box-with-humber bg-white p-5">
-                <span class="icon icon-format_paint mr-2 text-primary h3 mb-3 d-block"></span>
-                <h2 class="text-primary">Brand Strategy</h2>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et praesentium eos nulla qui commodi consectetur beatae fugiat. Veniam iste rerum perferendis.</p>
-                <ul class="list-unstyled ul-check primary">
-                  <li>Customer Experience</li>
-                  <li>Product Management</li>
-                  <li>Proof of Concept</li>
-                </ul>
+          <?php  
+           $sql = "SELECT * FROM cars ORDER BY id DESC LIMIT 3";
+           $resultforindex = $conn->query($sql); 
+           if(mysqli_num_rows($resultforindex)>0){
+            $data = mysqli_fetch_all($resultforindex, MYSQLI_ASSOC);
+                for($i=0; $i<count($data); $i++){
+?>
+
+          
+          <div class="col-lg-4 mb-4">
+            <div class="card " style="width: 18rem;">
+              <img class="card-img-top" src="<?php echo $data[$i]["File1"];?>" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title"><?php echo $data[$i]["Model"];?></h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 mb-lg-0 mb-4" data-jarallax-element="-50">
-              <div class="box-with-humber bg-white p-5">
-                <span class="icon icon-palette mr-2 text-primary h3 mb-3 d-block"></span>
-
-                <h2 class="text-primary">Visual Identity</h2>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et praesentium eos nulla qui commodi consectetur beatae fugiat. Veniam iste rerum perferendis.</p>
-                <ul class="list-unstyled ul-check primary">
-                  <li>Web Design</li>
-                  <li>Branding</li>
-                  <li>Web &amp; App Development</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 mb-lg-0 mb-4" data-jarallax-element="20">
-              <div class="box-with-humber bg-white p-5">
-                <span class="icon icon-laptop2 mr-2 text-primary h3 mb-3 d-block"></span>
-
-                <h2 class="text-primary">Web Design</h2>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et praesentium eos nulla qui commodi consectetur beatae fugiat. Veniam iste rerum perferendis.</p>
-                <ul class="list-unstyled ul-check primary">
-                  <li>Social Media</li>
-                  <li>Paid Campaigns</li>
-                  <li>Marketing &amp; SEO</li>
-                </ul>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><?php echo $data[$i]["Price"];?></li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
               </div>
             </div>
           </div>
+          <?php }} ?>
         </div>
+        
+      </div>
+      </div>
+      
       </section>
 
       <section class="site-section">
