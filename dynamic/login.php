@@ -13,7 +13,7 @@ $check=mysqli_query($conn,"SELECT * FROM users WHERE email = '$email' AND passwo
 echo $pass;
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     if(mysqli_num_rows($check)==1){
-        header("Location: ../index.html"); 
+        header("Location: ../index.php"); 
         session_start();
         // get username and gmail
         $get = "SELECT * FROM users WHERE email='$email'";

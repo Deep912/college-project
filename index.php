@@ -107,7 +107,7 @@
       
 
       <section class="site-section">
-      <h2 class="site-section-heading text-center">featured <span class="diffcolor"> cars </span></h2>
+      <h2 class="site-section-heading text-center">featured cars</h2>
         <div class="container">
           <div class="row">
           <?php  
@@ -167,10 +167,12 @@
 
       <section class="site-section" id="work-section">
         <div class="container">
+        <h2 class="site-section-heading ">Latest News</h2>
+        <p class="lead">hehe</p>
           <div class="row mb-5 justify-content-center">
             <div class="col-md-8 text-center">
-              <h2 class="site-section-heading text-center">Our Works</h2>
-              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, itaque neque, delectus odio iure explicabo.</p>
+              <!-- <h2 class="site-section-heading text-center">Latest News</h2> -->
+              <!-- <p class="lead">hehe</p> -->
             </div>
           </div>
         </div>
@@ -231,110 +233,13 @@
                 </div>
               </a>
             </div>
-
-
-
-            <div class="col-md-6 col-lg-4">
-              <a href="images/img_7.jpg" class="media-1" data-fancybox="gallery">
-                <img src="images/img_7.jpg" alt="Image" class="img-fluid">
-                <div class="media-1-content">
-                  <h2>Flower</h2>
-                  <span class="category">Web Application</span>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <a href="images/img_8.jpg" class="media-1" data-fancybox="gallery">
-                <img src="images/img_8.jpg" alt="Image" class="img-fluid">
-                <div class="media-1-content">
-                  <h2>Headset</h2>
-                  <span class="category">Branding</span>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <a href="images/img_9.jpg" class="media-1" data-fancybox="gallery">
-                <img src="images/img_9.jpg" alt="Image" class="img-fluid">
-                <div class="media-1-content">
-                  <h2>Amazon Speaker</h2>
-                  <span class="category">Website</span>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-              <a href="images/img_10.jpg" class="media-1" data-fancybox="gallery">
-                <img src="images/img_10.jpg" alt="Image" class="img-fluid">
-                <div class="media-1-content">
-                  <h2>Battle Creek</h2>
-                  <span class="category">Web Application</span>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <a href="images/img_11.jpg" class="media-1" data-fancybox="gallery">
-                <img src="images/img_11.jpg" alt="Image" class="img-fluid">
-                <div class="media-1-content">
-                  <h2>Nouri</h2>
-                  <span class="category">Branding</span>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <a href="images/img_12.jpg" class="media-1" data-fancybox="gallery">
-                <img src="images/img_12.jpg" alt="Image" class="img-fluid">
-                <div class="media-1-content">
-                  <h2>Fiber Cloth</h2>
-                  <span class="category">Website</span>
-                </div>
-              </a>
-            </div>
-
-
           </div>
         </div>
       </section>
 
       <section class="section ft-feature-1">
         <div class="container">
-          <div class="row align-items-stretch">
-            <div class="col-12 w-100 ft-feature-1-content">
-              <div class="row align-items-center">
-                <div class="col-lg-5"  data-jarallax-element="50">
-
-                  <img src="images/img_13.jpg" alt="Image" class="img-fluid mb-4 mb-lg-0">
-
-                </div>
-                <div class="col-lg-3 ml-auto" data-jarallax-element="-50">
-                  <div class="mb-5">
-                    <h3 class="d-flex align-items-center"><span class="icon icon-beach_access mr-2"></span><span>Strategy</span></h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ab nihil quam nesciunt.</p>
-                    <p><a href="#">Read More</a></p>
-                  </div>
-
-                  <div>
-                    <h3 class="d-flex align-items-center"><span class="icon icon-build mr-2"></span><span>Web Development</span></h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ab nihil quam nesciunt.</p>
-                    <p><a href="#">Read More</a></p>
-                  </div>
-
-                </div>
-                <div class="col-lg-3">
-                  <div class="mb-5">
-                    <h3 class="d-flex align-items-center"><span class="icon icon-format_paint mr-2"></span><span>Art Direction</span></h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ab nihil quam nesciunt.</p>
-                    <p><a href="#">Read More</a></p>
-                  </div>
-
-                  <div>
-                    <h3 class="d-flex align-items-center"><span class="icon icon-question_answer mr-2"></span><span>Copywriting</span></h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ab nihil quam nesciunt.</p>
-                    <p><a href="#">Read More</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <h2> space for banner </h2>
         </div>
       </section>
 

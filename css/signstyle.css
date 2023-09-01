@@ -16,12 +16,24 @@ body{
   background-size: cover;
   background-position: center;
 }
+
 .container{
   position: relative;
   width: 400px;
   background: white;
   padding: 60px 40px;
 }
+.container .title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
 header{
   font-size: 40px;
   margin-bottom: 60px;
