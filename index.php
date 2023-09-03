@@ -83,7 +83,7 @@
     </header>
 
 
-    <div class="particlehead">
+    <!-- <div class="particlehead">
       
     </div>
       <div class="site-blocks-cover">
@@ -103,8 +103,22 @@
             </div>
           </div>
         </div>
-      </div>  
+      </div>   -->
+      <div class="header_slider">
+        <img src="./images/BMW-Motorsports1.jpg" class="d-block w-100" alt="...">
+        <div class="col-md-12 centered" data-aos="fade-up" data-aos-delay="400">
+
+<div class="row justify-content-center mb-4 ">
+  <div class="col-md-10 text-center">
+    <h1>Let's <span class="typed-words"></span></h1>
+    <p class="lead mb-5 font-weight-bold"> <a href="#">We Are BMW</a></p>
+  </div>
+</div>
+
+</div>
+      </div>
       
+      <!-- three latest cars in card -->
 
       <section class="site-section">
       <h2 class="site-section-heading text-center">featured cars</h2>
@@ -145,21 +159,34 @@
       
       </section>
 
+
       <section class="site-section">
         <div class="container">
-          <div class="row align-items-center justify-content-around">
-            <div class="col-lg-5" data-jarallax-element="-50">
-              <h2 class="text-primary">Web Design</h2>
-              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et praesentium eos nulla qui commodi consectetur beatae fugiat. Veniam iste rerum perferendis.</p>
-              <ul class="list-unstyled ul-check primary">
+          <div class="row justify-content-around">
+            <div class="col-lg-6" data-jarallax-element="-50">
+              <h1 class="text-primary">CURRENT COMPETITIONS</h1>
+
+              <h5 class="mb-6 font-weight-bold">IMSA WeatherTech SportsCar Championship</h5>
+              <p class="font-weight-bold">explore event</p>
+              <h5 class="mb-6 font-weight-bold">IMSA Michelin Pilot Challenge</h5>
+              <p class="font-weight-bold">explore event</p>
+              <h5 class="mb-6 font-weight-bold">SRO Fanatec GT World Challenge America</h5>
+              <p class="font-weight-bold">explore event</p>
+              <h5 class="mb-6 font-weight-bold">SRO GT America</h5>
+              <p class="font-weight-bold">explore event</p>
+              <h5 class="mb-6 font-weight-bold">SRO Pirelli GT4 America</h5>
+              <p class="font-weight-bold">explore event</p>
+              <h5 class="mb-6 font-weight-bold">SRO TC America</h5>
+              <p class="font-weight-bold">explore event</p>
+              <!-- <ul class="list-unstyled ul-check primary">
                 <li>Social Media</li>
                 <li>Paid Campaigns</li>
                 <li>Marketing &amp; SEO</li>
-              </ul>
+              </ul> -->
             </div>
 
             <div class="col-lg-6" data-jarallax-element="50">
-              <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+              <img src="images/sidebar-second.jpg" alt="Image" class="img-fluid">
             </div>
           </div>
         </div>
@@ -178,78 +205,68 @@
         </div>
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-6">
               <a href="images/img_1.jpg" class="media-1" data-fancybox="gallery">
-                <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+                <img src="./images/tttt/BMW-MY24-X5-HP-Secondary-FMA-Desktop.avif" alt="Image" class="img-fluid">
                 <div class="media-1-content">
-                  <h2>Laptop on the Table</h2>
-                  <span class="category">Web Application</span>
+                  <h2>THE 2024 BMW iX</h2>
+                  
+                  <span class="category"><h2>  AN ELECTRIC FUTURE</h2></span>
                 </div>
               </a>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-6">
               <a href="images/img_2.jpg" class="media-1" data-fancybox="gallery">
-                <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+                <img src="images/tttt/BMW-MY23-X7-Secondary-FMA-Desktop.avif" alt="Image" class="img-fluid">
                 <div class="media-1-content">
-                  <h2>Wrist Watches</h2>
-                  <span class="category">Branding</span>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <a href="images/img_3.jpg" class="media-1" data-fancybox="gallery">
-                <img src="images/img_3.jpg" alt="Image" class="img-fluid">
-                <div class="media-1-content">
-                  <h2>Nike Shoe</h2>
-                  <span class="category">Website</span>
-                </div>
-              </a>
-            </div>
+                  <h2>THE NEW 2024 BMW X5</h2>
 
-            <div class="col-md-6 col-lg-4">
-              <a href="images/img_4.jpg" class="media-1" data-fancybox="gallery">
-                <img src="images/img_4.jpg" alt="Image" class="img-fluid">
-                <div class="media-1-content">
-                  <h2>Tall Chair</h2>
-                  <span class="category">Web Application</span>
+                  <span class="category"><h2>LEAD WITH CONFIDENCE</h2></span>
                 </div>
               </a>
             </div>
-            <div class="col-md-6 col-lg-4">
+            
+
+            
+            <div class="col-md-6 col-lg-6">
               <a href="images/img_5.jpg" class="media-1" data-fancybox="gallery">
-                <img src="images/img_5.jpg" alt="Image" class="img-fluid">
+                <img src="images/tttt/BMW-Secondary-FMA-Homepage-Cookied-Tile-01-Desktop.avif" alt="Image" class="img-fluid">
                 <div class="media-1-content">
-                  <h2>Drone</h2>
-                  <span class="category">Branding</span>
+                  <h2>THE 2024 BMW X7</h2>
+                    
+                  <span class="category"><h2>NEXT-LEVEL LUXURY</h2></span>
                 </div>
               </a>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-6">
               <a href="images/img_6.jpg" class="media-1" data-fancybox="gallery">
-                <img src="images/img_6.jpg" alt="Image" class="img-fluid">
+                <img src="images/tttt/BMW-Secondary-FMA-Homepage-Tile-04-Desktop.avif" alt="Image" class="img-fluid">
                 <div class="media-1-content">
-                  <h2>Architect</h2>
-                  <span class="category">Website</span>
+                  <h2>THE 2024 BMW 8 SERIES</h2>
+
+                  <span class="category"><h2>POWER AND PRESTIGE</h2></span>
                 </div>
               </a>
             </div>
           </div>
         </div>
-      </section>
+      
 
       <section class="section ft-feature-1">
         <div class="container">
-          <h2> space for banner </h2>
+        <h2 class="site-section-heading text-center">THE BMW M MOTORSPORT LINEUP</h2>
+        
+        <p class="lead text-center font-weight-bold"> RACE-READY MODELS</p>
+
+          <img src="./images/m8.jpg" alt="Image" class="img-fluid mb-5">
+          
+        
+        <h3 class="lead"><img src="./images/Mlogo.jpg" class="logo-msports text-center"></h3>
+        <h3 class="lead">The BMW M2 CS Racing.</h3>
         </div>
       </section>
-
-
-      <section class="site-section testimonial-wrap">
         <div class="container mb-5">
           <div class="row justify-content-center">
-            <div class="col-md-8 text-center">
-              <h2 class="site-section-heading text-center">Testimonials</h2>
-            </div>
           </div>
         </div>
         <div class="slide-one-item home-slider owl-carousel">
@@ -257,12 +274,12 @@
             <div class="testimonial">
 
               <blockquote class="mb-5">
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                <p>An ideal race car for ambitious drivers and teams looking to break into the world of motorsport,
+                   add more wins, or perfect their craft.
+                   The BMW M2 CS Racing boasts impressive performance and technology in a vehicle suitable for all racing formats.</p>
               </blockquote>
 
               <figure class="mb-4 d-block align-items-center justify-content-center">
-                <div><img src="images/person_3.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
-                <p>John Smith</p>
               </figure>
             </div>
           </div>
@@ -270,13 +287,11 @@
             <div class="testimonial">
 
               <blockquote class="mb-5">
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                <p>The BMW M2 CS Racing combines the high-performance engineering of BMW M with the purpose-built 
+                  expertise of BMW M Motorsport. This popular race car, a favorite with new and experienced drivers,
+                   is building a legacy to rival its immensely successful predecessor.</p>
               </blockquote>
-              <figure class="mb-4 d-block align-items-center justify-content-center">
-                <div><img src="images/person_2.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
-                <p>Christine Aguilar</p>
-              </figure>
-
+              
             </div>
           </div>
 
@@ -284,105 +299,79 @@
             <div class="testimonial">
 
               <blockquote class="mb-5">
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
+                <p>UP TO</p>
+                   <h2>   365 </h2>
+                <h3>  HORSEPOWER</h3>
               </blockquote>
-              <figure class="mb-4 d-block align-items-center justify-content-center">
-                <div><img src="images/person_4.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
-                <p>Robert Spears</p>
-              </figure>
+              
 
 
             </div>
           </div>
 
-          <div>
-            <div class="testimonial">
+          
 
-              <blockquote class="mb-5">
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-              </blockquote>
-              <figure class="mb-4 d-block align-items-center justify-content-center">
-                <div><img src="images/person_5.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
-                <p>Bruce Rogers</p>
-              </figure>
+        </div>
+        <section class="section ft-feature-1">
+        <div class="">
 
-            </div>
-          </div>
+          <img src="./images/BMW-Motorsports12.jpg" alt="Image" class="img-fluid mb-14 d-block w-auto">
 
         </div>
       </section>
-
-      <section class="site-section border-bottom" id="services-section">
+      <section>
         <div class="container">
           <div class="row justify-content-center mb-5">
             <div class="col-md-8 text-center" data-aos="fade-up">
-              <h2 class="site-section-heading text-center">Our Services</h2>
+              <h2 class="site-section-heading text-center">Ownership starts here.</h2>
             </div>
           </div>
           <div class="row align-items-stretch">
-            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+            <div class="col-md-6 col-lg-3 mb-3 mb-lg-3" data-aos="fade-up">
               <div class="unit-4 d-flex">
-                <div class="unit-4-icon mr-4"><span class="text-primary icon-laptop2"></span></div>
+                <div class="unit-4-icon mr-4"><span class="text-primary"></span><img src="./images/svgs/arrow-repeat.svg">  </div>
                 <div>
-                  <h3>Web Design</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                  <h3>Trade-In Value</h3>
+                  <p>Get the latest information on your vehicle’s trade-in value today. </p>
                   <p><a href="#">Learn More</a></p>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-md-6 col-lg-3 mb-3 mb-lg-3" data-aos="fade-up" data-aos-delay="100">
               <div class="unit-4 d-flex">
-                <div class="unit-4-icon mr-4"><span class="text-primary icon-shopping_cart"></span></div>
+                <div class="unit-4-icon mr-4"><span class="text-primary"><img src="./images/svgs/speedometer2.svg" ></span></div>
                 <div>
-                  <h3>eCommerce</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                  
+                  <h3>Check Your Credit Score</h3>
+                  <p>See where you stand on your journey to owning a BMW.<p>
                   <p><a href="#">Learn More</a></p>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-md-6 col-lg-3 mb-3 mb-lg-3" data-aos="fade-up" data-aos-delay="200">
               <div class="unit-4 d-flex">
-                <div class="unit-4-icon mr-4"><span class="text-primary icon-question_answer"></span></div>
+                <div class="unit-4-icon mr-4"><span class="text-primary"></span><img src="./images/svgs/currency-dollar.svg" ></div>
                 <div>
-                  <h3>Web Applications</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                  <p><a href="#">Learn More</a></p>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
-              <div class="unit-4 d-flex">
-                <div class="unit-4-icon mr-4"><span class="text-primary icon-format_paint"></span></div>
-                <div>
-                  <h3>Branding</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                  <p><a href="#">Learn More</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
-              <div class="unit-4 d-flex">
-                <div class="unit-4-icon mr-4"><span class="text-primary icon-extension"></span></div>
-                <div>
-                  <h3>Copy Writing</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                  <p><a href="#">Learn More</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
-              <div class="unit-4 d-flex">
-                <div class="unit-4-icon mr-4"><span class="text-primary icon-phonelink"></span></div>
-                <div>
-                  <h3>Mobile Applications</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                  <h3>Apply for Financing</h3>
+                  <p>Own the BMW of your dreams with BMW Financial Services.</p>
                   <p><a href="#">Learn More</a></p>
                 </div>
               </div>
             </div>
 
+
+            <div class="col-md-6 col-lg-3 mb-3 mb-lg-3" data-aos="fade-up" data-aos-delay="300">
+              <div class="unit-4 d-flex">
+                <div class="unit-4-icon mr-4"><span class="text-primary"></span><img src="./images/svgs/envelope.svg" ></div>
+                <div>
+                  <h3>Stay Connected</h3>
+                  <p>
+                  Receive the latest offers, releases, and news from BMW.</p>
+                  <p><a href="#">Learn More</a></p>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
       </section>
@@ -488,46 +477,7 @@
         </div>
       </div>
 
-      <section class="site-section" id="blog-section">
-        <div class="container">
-          <div class="row justify-content-center mb-5">
-            <div class="col-md-8 text-center">
-              <h2 class="site-section-heading text-center">Blog</h2>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-              <div class="h-entry">
-                <img src="images/img_1.jpg" alt="Image" class="img-fluid">
-                <h2 class="font-size-regular"><a href="#">Create Beautiful Website In Less Than An Hour</a></h2>
-                <div class="meta mb-4">Ham Brook <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-                <p><a href="#">Continue Reading...</a></p>
-              </div> 
-            </div>
-            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-              <div class="h-entry">
-                <img src="images/img_2.jpg" alt="Image" class="img-fluid">
-                <h2 class="font-size-regular"><a href="#">Create Beautiful Website In Less Than An Hour</a></h2>
-                <div class="meta mb-4">James Phelps <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-                <p><a href="#">Continue Reading...</a></p>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-              <div class="h-entry">
-                <img src="images/img_3.jpg" alt="Image" class="img-fluid">
-                <h2 class="font-size-regular"><a href="#">Create Beautiful Website In Less Than An Hour</a></h2>
-                <div class="meta mb-4">James Phelps <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-                <p><a href="#">Continue Reading...</a></p>
-              </div> 
-            </div>
-
-          </div>
-        </div>
-      </section>
+      
 
 
 
@@ -676,7 +626,7 @@
     <script src="js/typed.js"></script>
     <script>
       var typed = new Typed('.typed-words', {
-        strings: ["Web Apps"," WordPress"," Mobile Apps"],
+        strings: ["Go Places"," Feel The Power","Feel Bmw"],
         typeSpeed: 80,
         backSpeed: 80,
         backDelay: 4000,
@@ -686,9 +636,13 @@
       });
     </script>
 
+
+<!-- script for car category -->
+
+
     <script src="js/main.js"></script>
 
-    
+  
 
   </body>
   </html>

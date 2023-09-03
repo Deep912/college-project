@@ -1,0 +1,38 @@
+ <section class="site-section">
+      <h2 class="site-section-heading text-center">featured cars</h2>
+        <div class="container">
+          <div class="row">
+          <?php  
+           $sql = "SELECT * FROM cars ORDER BY id DESC LIMIT 3";
+           $resultforindex = $conn->query($sql); 
+           if(mysqli_num_rows($resultforindex)>0){
+            $data = mysqli_fetch_all($resultforindex, MYSQLI_ASSOC);
+                for($i=0; $i<count($data); $i++){
+?>
+
+          
+          <div class="col-lg-4 mb-4">
+            <div class="card " style="width: 18rem;">
+              <img class="card-img-top" src="<?php echo $data[$i]["File1"];?>" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title"><?php echo $data[$i]["Model"];?></h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><?php echo $data[$i]["Price"];?></li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+          </div>
+          <?php }} ?>
+        </div>
+        
+      </div>
+      </div>
+      
+      </section>
