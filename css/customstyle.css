@@ -27,3 +27,10 @@
     
     transform: translate(-50%, -50%);
 }
+.pics{
+    height: 90vh;
+}
+
+.header_slider1{
+    height: 95vh;
+}
