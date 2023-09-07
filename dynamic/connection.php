@@ -7,7 +7,7 @@ session_start();
 $host = "localhost";
 $username = "root";
 $password = "";
-$database = "carselling101";
+$database = "bmw101";
 
 // Create a connection to the database
 $conn =mysqli_connect($host, $username, $password, $database);

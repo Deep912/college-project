@@ -57,10 +57,10 @@ if (isset($_SESSION['admin_logged_in'])) {
           </button>
         </div>
         <div>
-          <a class="navbar-brand brand-logo" href="index.html">
+          <a class="navbar-brand brand-logo" href="index.php">
             <img src="images/logo.svg" alt="logo" />
           </a>
-          <a class="navbar-brand brand-logo-mini" href="index.html">
+          <a class="navbar-brand brand-logo-mini" href="index.php">
             <img src="images/logo-mini.svg" alt="logo" />
           </a>
         </div>
@@ -396,7 +396,7 @@ if (isset($_SESSION['admin_logged_in'])) {
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="index.php">
               <i class="mdi mdi-grid-large menu-icon"></i>
               <span class="menu-title">Dashboard</span>
             </a>
@@ -441,7 +441,7 @@ if (isset($_SESSION['admin_logged_in'])) {
                 <li class="nav-item"> <a class="nav-link" href="./dynamic/allcars.php">view cars</a></li>
               </ul>
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="addcar.html">Add car</a></li>
+                <li class="nav-item"> <a class="nav-link" href="addcars.html">Add car</a></li>
               </ul>
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="editcar.html">edit car</a></li>
@@ -451,12 +451,12 @@ if (isset($_SESSION['admin_logged_in'])) {
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
               <i class="menu-icon mdi mdi-table"></i>
-              <span class="menu-title">Tables</span>
+              <span class="menu-title">users</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/tables/basic-table.html">Basic table</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./dynamic/allusers.php">users</a></li>
               </ul>
             </div>
           </li>
@@ -572,8 +572,13 @@ if (isset($_SESSION['admin_logged_in'])) {
 </html>
 
 <?php } else {
+  
 
   ?>
+
+  <script>
+     
+  </script>
 <!DOCTYPE html>
 <html>
 <head>

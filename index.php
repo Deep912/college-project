@@ -35,6 +35,8 @@
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/customstyle.css">
+  <link rel="stylesheet" href="css/cardsstyle.css">
+
   <title>Strategy &mdash; Free Bootstrap Template by Untree.co</title>
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -86,29 +88,7 @@
       </div>
       
     </header>
-
-
-    <!-- <div class="particlehead">
-      
-    </div>
-      <div class="site-blocks-cover">
-        <div class="container">
-          <div class="row align-items-center justify-content-center text-center">
-
-            <div class="col-md-12" data-aos="fade-up" data-aos-delay="400">
-
-              <div class="row justify-content-center mb-4">
-                <div class="col-md-10 text-center">
-                  <h1>We Love To Build <span class="typed-words"></span></h1>
-                  <p class="lead mb-5">A free bootstrap template from the fine folks at <a href="#">Untree.co</a></p>
-                  <div><a data-fancybox data-ratio="2" href="./favicon.png" class="btn btn-primary btn-md">Watch Video</a></div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>   -->
+    
       <div class="header_slider">
         <img src="./images/BMW-Motorsports1.jpg" class="d-block w-100" alt="...">
         <div class="col-md-12 centered" data-aos="fade-up" data-aos-delay="400">
@@ -139,23 +119,35 @@
 
           
           <div class="col-lg-4 mb-4">
-            <div class="card " style="width: 18rem;">
-              <img class="card-img-top" src="<?php echo $data[$i]["File1"];?>" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title"><?php echo $data[$i]["Model"];?></h5>
-                <p class="card-text">Description</p>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item"><?php echo $data[$i]["Price"];?></li>
-              </ul>
-             
-            </div>
+            
+          <section class="articles">
+  <article>
+    <div class="article-wrapper">
+      <figure>
+        <img src="./images/bmwpicforcars.jpg" alt="" />
+      </figure>
+      <div class="article-body">
+        <h2><?php echo $data[$i]["Model"];?></h2>
+        <p>
+          Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+        </p>
+        <a href="#" class="read-more">
+          Read more <span class="sr-only">about this is some title</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </article>
+          </section>
           </div>
+          
           <?php }} ?>
         </div>
         
       </div>
-      </div>
+
       
       </section>
 

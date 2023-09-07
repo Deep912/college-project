@@ -7,15 +7,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["name"];
     $email = $_POST["email"];
     $phone = $_POST["phone"];
-    $password =($_POST["password"]);
-
+    $pass =($_POST["password"]);
+    $password = md5($pass);
     // SQL query to insert user data
     $sql = "INSERT INTO users (name, email, phone, password) VALUES ('$name', '$email', '$phone', '$password')";
 
     if ($conn->query($sql) === TRUE) {
         header("Location:../login.html"); 
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "Error: " . $sql;
     }
 }
 

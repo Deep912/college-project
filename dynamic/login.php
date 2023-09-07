@@ -3,9 +3,9 @@ include("connection.php");
 
 //with extract
 extract($_POST);
-$pass =($_POST["pass"]);
+$password =($_POST["pass"]);
 $email =($_POST["email"]);
-
+$pass = md5($password);
 
 //checking user
 $check=mysqli_query($conn,"SELECT * FROM users WHERE email = '$email' AND password = '$pass'");

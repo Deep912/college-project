@@ -34,16 +34,16 @@
   <div class="container">
 <a href="../index.php">back to admin</a>
 
-  <h2>ALL CARS<small></small></h2>
+  <h2>All Users<small></small></h2>
   <ul class="responsive-table">
     <li class="table-header">
       <div class="col col-1">Id</div>
-      <div class="col col-2">Model</div>
-      <div class="col col-3">price</div>
-      <div class="col col-4">category</div>
+      <div class="col col-2">name</div>
+      <div class="col col-3">email</div>
+      <div class="col col-4">password</div>
     </li>
     <?php 
-    $sql = "SELECT * FROM cars";
+    $sql = "SELECT * FROM users";
     $resultforindex = $conn->query($sql); 
     if(mysqli_num_rows($resultforindex)>0){
      $data = mysqli_fetch_all($resultforindex, MYSQLI_ASSOC);
@@ -52,9 +52,9 @@
     ?>
     <li class="table-row">
       <div class="col col-1" data-label="Id"><?php echo $data[$i]["id"];?></div>
-      <div class="col col-2" data-label="Model"><?php echo $data[$i]["Model"];?></div>
-      <div class="col col-3" data-label="price"><?php echo $data[$i]["Price"];?></div>
-      <div class="col col-4" data-label="category"><?php echo $data[$i]["category"];?></div>
+      <div class="col col-2" data-label="Model"><?php echo $data[$i]["name"];?></div>
+      <div class="col col-3" data-label="price"><?php echo $data[$i]["email"];?></div>
+      <div class="col col-4" data-label="category"><?php echo $data[$i]["password"];?></div>
     </li>
     <?php 
          }} else {
@@ -65,6 +65,42 @@
            ?> 
   </ul>
 </div>
+
+<!-- admin data -->
+
+<div class="container">
+  <h2>All Admin Users<small></small></h2>
+  <ul class="responsive-table">
+    <li class="table-header">
+      <div class="col col-1">Id</div>
+      <div class="col col-2">name</div>
+      <div class="col col-3">email</div>
+      <div class="col col-4">password</div>
+    </li>
+    <?php 
+    $sql = "SELECT * FROM admin";
+    $resultforindex = $conn->query($sql); 
+    if(mysqli_num_rows($resultforindex)>0){
+     $data = mysqli_fetch_all($resultforindex, MYSQLI_ASSOC);
+         for($i=0; $i<count($data); $i++){
+    
+    ?>
+    <li class="table-row">
+      <div class="col col-1" data-label="Id"><?php echo $data[$i]["id"];?></div>
+      <div class="col col-2" data-label="Model"><?php echo $data[$i]["name"];?></div>
+      <div class="col col-3" data-label="price"><?php echo $data[$i]["email"];?></div>
+      <div class="col col-4" data-label="category"><?php echo $data[$i]["password"];?></div>
+    </li>
+    <?php 
+         }} else {
+           ?>
+<h2>there was an error</h2>
+            <?php 
+           }
+           ?> 
+  </ul>
+</div>
+
 <!-- plugins:js -->
   <script src="vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
