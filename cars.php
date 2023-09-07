@@ -56,20 +56,26 @@
         <div class="row align-items-center">
 
           <div class="col-11 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="mb-0">Strategy<span class="text-primary">.</span> </a></h1>
+            <h1 class="mb-0 site-logo"><a href="index.php" class="mb-0">Strategy<span class="text-primary">.</span> </a></h1>
           </div>
           <div class="col-12 col-md-10 d-none d-xl-block ">
             <nav class="site-navigation position-relative text-right" role="navigation">
 
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                 <!-- <li><a href="#home-section" class="nav-link">Home</a></li> -->
-                <li><a href="cars.php" class="nav-link">Cars</a></li>
+                <li><a href="index.php" class="nav-link colorful-underline">Home</a></li>
+                <li><a href="cars.php" class="nav-link static-underline">Cars</a></li>
                 <li>
-                  <a href="#services-section" class="nav-link">Services</a>
+                  <a href="#services-section " class="nav-link colorful-underline">Services</a>
                 </li>
-                <li><a href="#blog-section" class="nav-link">About</a></li>
-                <li><a href="#contact-section" class="nav-link">Contact</a></li>
-                <li><a href="signup.html" class="nav-link">Join us</a></li>
+                <li><a href="#blog-section" class="nav-link colorful-underline">About</a></li>
+                <li><a href="#contact-section" class="nav-link colorful-underline">Contact</a></li>
+                <?php if (isset($_SESSION['user'])) {?>
+                <li><a href="profile.php" class="nav-link colorful-underline">My BMW</a></li>
+
+                  <?php } else {?>
+                <li><a href="signup.html" class="nav-link colorful-underline">Join us</a></li>
+                <?php } ?>
               </ul>
             </nav>
           </div>
@@ -82,60 +88,58 @@
       
     </header>
 
-      <div class="header_slider">
+      <div class="header_slider1">
       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner pics">
     <div class="carousel-item active header_slider1" >
-      <img class="d-flex w-100 " src="./images/bmwpicforcars.jpg" alt="First slide">
+      <img class="d-flex w-100 " src="./images/bmwpicforcars.jpg" alt="First slide">  
     </div>
+    
     <div class="carousel-item header_slider1">
       <img class="d-block w-100" src="./images/bmwcarsfolder/bmwsec.jpg" alt="Second slide">
     </div>
+
     <div class="carousel-item header_slider1">
       <img class="d-block w-100" src="./images/bmwcarsfolder/bmwth.jpg" alt="Third slide">
     </div>
   </div>
+
   <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
+
   <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+  
 </div>
       </div>
       
       <!-- three latest cars in card -->
 
       <section class="site-section">
-      <h2 class="site-section-heading text-center">featured cars</h2>
+      <h2 class="site-section-heading text-center">Our Perfomanse Cars</h2>
         <div class="container">
-          <div class="row">
+          <div class="row car-rows">
           <?php  
-          //  $sql = "SELECT * FROM cars ORDER BY id DESC LIMIT 3";
-          //  $resultforindex = $conn->query($sql); 
-          //  if(mysqli_num_rows($resultforindex)>0){
-          //   $data = mysqli_fetch_all($resultforindex, MYSQLI_ASSOC);
-          //       for($i=0; $i<count($data); $i++){
+           $sql = "SELECT * FROM cars where category = 'M series'";
+           $resultforindex = $conn->query($sql); 
+           if(mysqli_num_rows($resultforindex)>0){
+            $data = mysqli_fetch_all($resultforindex, MYSQLI_ASSOC);
+                for($i=0; $i<count($data); $i++){
 ?>
-
-<!--           
-          <div class="col-lg-4 mb-4">
-            <div class="card " style="width: 18rem;">
-              <img class="card-img-top" src="<?php echo $data[$i]["File1"];?>" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title"><?php echo $data[$i]["Model"];?></h5>
-                <p class="card-text">Description</p>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item"><?php echo $data[$i]["Price"];?></li>
-              </ul>
-             
-            </div>
-          </div> -->
+<div class="card " style="width: 22rem;">
+  <img class="card-img-top" src="./images/bmwforcars.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><?php echo $data[$i]["Model"];?></h5>
+    <p class="card-text"><?php echo $data[$i]["Model"];?></p>
+    <a href="#" class="btn btn-primary">Explore</a>
+  </div>
+</div>
           <?php 
-        // }} else {
+         }} else {
            ?>
 
             <div class="card" style="width: 25rem;">
@@ -147,7 +151,7 @@
   </div>
 </div>
             <?php 
-          // }
+           }
            ?> 
         </div>
         
@@ -156,6 +160,87 @@
       
       </section>
 
+      <section class="site-section">
+      <h2 class="site-section-heading text-center">Our SUVs</h2>
+        <div class="container">
+          <div class="row car-rows">
+          <?php  
+           $sql = "SELECT * FROM cars where category = 'SUV'";
+           $resultforindex = $conn->query($sql); 
+           if(mysqli_num_rows($resultforindex)>0){
+            $data = mysqli_fetch_all($resultforindex, MYSQLI_ASSOC);
+                for($i=0; $i<count($data); $i++){
+?>
+<div class="card " style="width: 22rem;">
+  <img class="card-img-top" src="./images/bmwforcars.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><?php echo $data[$i]["Model"];?></h5>
+    <p class="card-text"><?php echo $data[$i]["Model"];?></p>
+    <a href="#" class="btn btn-primary">Explore</a>
+  </div>
+</div>
+          <?php 
+         }} else {
+           ?>
+
+            <div class="card" style="width: 25rem;">
+  <img class="card-img-top" src="./images/bmwforcars.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+            <?php 
+           }
+           ?> 
+        </div>
+        
+      </div>
+      </div>
+      
+      </section>
+
+      <section class="site-section">
+      <h2 class="site-section-heading text-center">sedans</h2>
+        <div class="container">
+          <div class="row car-rows">
+          <?php  
+           $sql = "SELECT * FROM cars where category = 'sedan'";
+           $resultforindex = $conn->query($sql); 
+           if(mysqli_num_rows($resultforindex)>0){
+            $data = mysqli_fetch_all($resultforindex, MYSQLI_ASSOC);
+                for($i=0; $i<count($data); $i++){
+?>
+<div class="card " style="width: 22rem;">
+  <img class="card-img-top" src="./images/bmwforcars.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><?php echo $data[$i]["Model"];?></h5>
+    <p class="card-text"><?php echo $data[$i]["Model"];?></p>
+    <a href="#" class="btn btn-primary">Explore</a>
+  </div>
+</div>
+          <?php 
+         }} else {
+           ?>
+
+            <div class="card" style="width: 25rem;">
+  <img class="card-img-top" src="./images/bmwforcars.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+            <?php 
+           }
+           ?> 
+        </div>
+        
+      </div>
+      </div>
+      
+      </section>
 
       
       <footer class="site-footer">

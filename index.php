@@ -69,7 +69,12 @@
                 </li>
                 <li><a href="#blog-section" class="nav-link">About</a></li>
                 <li><a href="#contact-section" class="nav-link">Contact</a></li>
+                <?php if (isset($_SESSION['user'])) {?>
+                <li><a href="profile.php" class="nav-link">My BMW</a></li>
+
+                  <?php } else {?>
                 <li><a href="signup.html" class="nav-link">Join us</a></li>
+                <?php } ?>
               </ul>
             </nav>
           </div>

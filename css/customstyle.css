@@ -28,9 +28,59 @@
     transform: translate(-50%, -50%);
 }
 .pics{
-    height: 90vh;
+    height: 100vh;
 }
 
 .header_slider1{
-    height: 95vh;
+    height: 100vh;
+}
+
+
+.car-rows{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* colorfull underline  */
+
+.colorful-underline {
+    text-decoration: none; /* Remove the default underline */
+    position: relative; /* Make sure the pseudo-element is positioned relative to this element */
+    color:rgb(76, 11, 99)!important; /* Set the text color */
+    
+}
+
+.colorful-underline::before {
+    content: ""; /* Create an empty pseudo-element */
+    position: absolute; /* Position it absolutely relative to the parent element */
+    bottom: -3px; /* Adjust the position of the underline relative to the text */
+    left: 20%; /* Start the underline from the left edge of the element */
+    width: 60%; /* Make the underline span the entire width of the element */
+    height: 3px; /* Set the height of the underline */
+    background: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(143, 87, 87, 0.1) 100%), linear-gradient(90deg, #84d2ff, #9169c2); /* Set the color of the underline */
+    visibility: hidden; /* Initially hide the underline */
+    transform: scaleX(0); /* Scale the underline horizontally to 0 */
+    transition: all 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.colorful-underline:hover::before {
+    visibility: visible; /* Make the underline visible on hover */
+    transform: scaleX(1); /* Scale the underline horizontally to 100% on hover */
+
+}
+.colorful-underline:hover{
+    font-weight: bold;
+    color: rgb(92, 44, 127)!important;
+
+}
+
+.static-underline{
+   
+    color:rgb(76, 11, 99)!important; /* Set the text color */
+    font-size: medium!important;
+    font-weight: bold;
+
+
 }
