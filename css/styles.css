@@ -1,0 +1,19 @@
+/* styles.css */
+.container-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.item {
+    width: 48%; /* Adjust the width as needed */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.item .image img {
+    max-width: 100%;
+    height: auto;
+}

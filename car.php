@@ -1,78 +1,13 @@
- <section class="site-section">
-      <h2 class="site-section-heading text-center">featured cars</h2>
-        <div class="container">
-          <div class="row">
-          <?php  
-           $sql = "SELECT * FROM cars ORDER BY id DESC LIMIT 3";
-           $resultforindex = $conn->query($sql); 
-           if(mysqli_num_rows($resultforindex)>0){
-            $data = mysqli_fetch_all($resultforindex, MYSQLI_ASSOC);
-                for($i=0; $i<count($data); $i++){
-?>
 
-          
-          <div class="col-lg-4 mb-4">
-            <div class="card " style="width: 18rem;">
-              <img class="card-img-top" src="<?php echo $data[$i]["File1"];?>" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title"><?php echo $data[$i]["Model"];?></h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item"><?php echo $data[$i]["Price"];?></li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-              </ul>
-              <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-              </div>
-            </div>
-          </div>
-          <?php }} ?>
-        </div>
-        
-      </div>
-      </div>
-      
-      </section>
-
-
-
-
-        $targetFolder = "../../images/cars/";
-
-        <?php include ("./dynamic/connection.php"); 
+<?php 
+include ("./dynamic/connection.php"); 
 $carId = $_GET['id'];
 $sql = "SELECT * FROM cars WHERE id = $carId";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_assoc($result);
-echo $row['name'];
-echo $row['price'];
+
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!doctype html>
-<?php include ("./dynamic/connection.php"); 
-$carId = $_GET['id'];
-$sql = "SELECT * FROM cars WHERE id = $carId";
-$result = mysqli_query($conn, $sql);
-$row = mysqli_fetch_assoc($result);
-echo $row['name'];
-echo $row['price'];
-?>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -103,6 +38,7 @@ echo $row['price'];
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/customstyle.css">
   <link rel="stylesheet" href="css/cardsstyle.css">
+  <link rel="stylesheet" href="css/styles.css">
 
   <title>Strategy &mdash; Free Bootstrap Template by Untree.co</title>
 </head>
@@ -157,20 +93,103 @@ echo $row['price'];
     </header>
 
     <div class="header_slider">
-        <img src="" class="d-block w-100" alt="...">
+        <img src="./images/required/sliderimg.jpg" class="d-block w-100" alt="...">
         <div class="col-md-12 centered" data-aos="fade-up" data-aos-delay="400">
-
-<div class="row justify-content-center mb-4 ">
- 
-</div>
 
 </div>
       </div>
   </div>
+  <div class="row justify-content-center mb-5">
+            <div class="col-md-8 text-center aos-init aos-animate" data-aos="fade-up">
+              <h2 class="site-section-heading text-center"><?php echo $row['model']; ?> </h2>
+            </div>
+          </div>
+  <div class="container-card">
+        <div class="item">
+            <div class="image">
+                <img src="./Admin/dynamic/images/bmwforcars.png" alt="Car 1">
+            </div>
+        </div>
+        <div class="item">
+            <div class="details">
+                <h2><?php echo $row['engine']; ?></h2>
+                <p>Description of Car 1.</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="details">
+                <h2>Car 2</h2>
+                <p>Description of Car 2.</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image">
+                <img src="./Admin/dynamic/images/bmwforcars.png" alt="Car 2">
+            </div>
+        </div>
+       
+</div>
+    
 
 
 
-      <script src="js/jquery-3.3.1.min.js"></script>
+<!-- footer section start -->
+
+
+    <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9">
+              <div class="row">
+                <div class="col-md-5">
+                  <h2 class="footer-heading mb-4">About Us</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
+                </div>
+                <div class="col-md-3 ml-auto">
+                  <h2 class="footer-heading mb-4">Features</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <h2 class="footer-heading mb-4">Follow Us</h2>
+                  <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+                  <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                  <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                  <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
+              <form action="#" method="post" class="subcription-form">
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-primary text-white" type="button" id="button-addon2">Send</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row pt-5 mt-5 text-center">
+            <div class="col-md-12">
+              <div class="border-top pt-5">
+                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co">Untree.co</a>  Distributed By <a href="https://themewagon.com">ThemeWagon</a> <!-- License information: https://untree.co/license/ -->
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </footer>
+
+    </div> <!-- .site-wrap -->
+
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/popper.min.js"></script>
@@ -216,4 +235,3 @@ echo $row['price'];
 
   </body>
   </html>
-
