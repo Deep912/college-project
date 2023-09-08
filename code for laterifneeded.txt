@@ -36,3 +36,8 @@
       </div>
       
       </section>
+
+
+
+
+        $targetFolder = "../../images/cars/";

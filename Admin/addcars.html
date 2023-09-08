@@ -11,59 +11,78 @@
   <div class="container">
     <div class="title">Add car</div>
     <div class="content">
-      <form action="./dynamic" method="post">
+      <form action="./dynamic/addcars.php" method="POST" enctype="multipart/form-data">
         <div class="user-details">
           <div class="input-box">
-            <span class="details"></span>
-            <input type="text" placeholder="Enter your name" required name="name">
+            <span class="details">category</span>
+            <select name="cars" id="cars">
+              <option value="sedan">sedan</option>
+              <option value="suv">suv</option>
+              <option value="sports">sports</option>
+            </select>
           </div>
           <div class="input-box">
-            <span class="details">Username</span>
-            <input type="text" placeholder="Enter your username" required>
+            <span class="details">Model</span>
+            <input type="text" placeholder="Enter your name"  name="model">
           </div>
           <div class="input-box">
-            <span class="details">Email</span>
-            <input type="text" placeholder="Enter your email" required name="email">
+            <span class="details">color</span>
+            <input type="text" placeholder="Enter your name"  name="color">
           </div>
           <div class="input-box">
-            <span class="details">Phone Number</span>
-            <input type="text" placeholder="Enter your number" required name="phone">
+            <span class="details">Year</span>
+            <input type="text" placeholder="Enter your username" name="year">
           </div>
           <div class="input-box">
-            <span class="details">Password</span>
-            <input type="text" placeholder="Enter your password" required name="password">
+            <span class="details">price</span>
+            <input type="text" placeholder="Enter your email"  name="price">
           </div>
           <div class="input-box">
-            <span class="details">Confirm Password</span>
-            <input type="text" placeholder="Confirm your password" required>
+            <span class="details">engine</span>
+            <input type="text" placeholder="Enter your password"name="engine">
           </div>
+          <div class="input-box">
+            <span class="details">transmission</span>
+            <input type="text" placeholder="Enter your number" name="transmission">
+          </div>
+          <div class="input-box">
+            <span class="details">Top Speed</span>
+            <input type="text" placeholder="Enter your number" name="speed">
+          </div>
+          <div class="input-box">
+            <span class="details">fuel</span>
+            <input type="text" placeholder="Enter your number" name="fuel">
+          </div>
+          <div class="input-box">
+            <span class="details">Milege</span>
+            <input type="text" placeholder="Enter your number" name="milege">
+          </div>
+          <div class="input-box">
+            <span class="details">drivetrain</span>
+            <input type="text" placeholder="Enter your number" name="drivetrain">
+          </div>
+          <div class="input-box">
+            <span class="details">details</span>
+            <input type="text" placeholder="Enter your number" name="details">
+          </div>
+          <div class="input-box">
+            <span class="details">Image1</span>
+            <input type="file" name="car_image3" >
+          </div>
+          <div class="input-box">
+            <span class="details"> Image2</span>
+            <input type="file" name="car_image2" >
+          </div>
+          <div class="input-box">
+            <span class="details"> Image3</span>
+            <input type="file" name="car_image1" >
+          </div>
+          
         </div>
-        <div class="gender-details">
-          <input type="radio" name="gender" id="dot-1">
-          <input type="radio" name="gender" id="dot-2">
-          <input type="radio" name="gender" id="dot-3">
-          <span class="gender-title">Gender</span>
-          <div class="category">
-            <label for="dot-1">
-            <span class="dot one"></span>
-            <span class="gender">Male</span>
-          </label>
-          <label for="dot-2">
-            <span class="dot two"></span>
-            <span class="gender">Female</span>
-          </label>
-          <label for="dot-3">
-            <span class="dot three"></span>
-            <span class="gender">Prefer not to say</span>
-            </label>
-          </div>
-        </div>
+
         <div class="button">
-          <input type="submit" value="Register">
+          <input type="submit" value="Save" name="submit">
         </div>
-        <div class="button-sml">
-            <a href="login.html">already member?</a>
-          </div>
       </form>
     </div>
   </div>

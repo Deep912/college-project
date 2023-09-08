@@ -64,7 +64,6 @@
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                 <!-- <li><a href="#home-section" class="nav-link">Home</a></li> -->
                 <li><a href="index.php" class="nav-link colorful-underline">Home</a></li>
-                <li><a href="cars.php" class="nav-link static-underline">Cars</a></li>
                 <li>
                   <a href="#services-section " class="nav-link colorful-underline">Services</a>
                 </li>
@@ -96,11 +95,11 @@
     </div>
     
     <div class="carousel-item header_slider1">
-      <img class="d-block w-100" src="./images/bmwcarsfolder/bmwsec.jpg" alt="Second slide">
+      <img class="d-block w-100" src="./images/required/bmwsec.jpg" alt="Second slide">
     </div>
 
     <div class="carousel-item header_slider1">
-      <img class="d-block w-100" src="./images/bmwcarsfolder/bmwth.jpg" alt="Third slide">
+      <img class="d-block w-100" src="./images/required/bmwth.jpg" alt="Third slide">
     </div>
   </div>
 

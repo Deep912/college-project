@@ -90,7 +90,7 @@
     </header>
     
       <div class="header_slider">
-        <img src="./images/BMW-Motorsports1.jpg" class="d-block w-100" alt="...">
+        <img src="./images/required/sliderimg.jpg" class="d-block w-100" alt="...">
         <div class="col-md-12 centered" data-aos="fade-up" data-aos-delay="400">
 
 <div class="row justify-content-center mb-4 ">
@@ -124,13 +124,17 @@
   <article>
     <div class="article-wrapper">
       <figure>
-        <img src="./images/bmwpicforcars.jpg" alt="" />
+        <img src="/stra/Admin/dynamic/<?php echo $data[$i]["image3"];?>" alt="" />
       </figure>
       <div class="article-body">
-        <h2><?php echo $data[$i]["Model"];?></h2>
+        <h2><?php echo $data[$i]["model"];?></h2>
+        <h2><?php echo $data[$i]["speed"];?></h2>
         <p>
-          Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
-        </p>
+        <?php echo $data[$i]["details"];?>
+      </p>
+      <p>
+        <?php echo $data[$i]["engine"];?>
+      </p>
         <a href="#" class="read-more">
           Read more <span class="sr-only">about this is some title</span>
           <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
@@ -178,7 +182,7 @@
             </div>
 
             <div class="col-lg-6" data-jarallax-element="50">
-              <img src="images/sidebar-second.jpg" alt="Image" class="img-fluid">
+              <img src="images/required/sidebar-second.jpg" alt="Image" class="img-fluid">
             </div>
           </div>
         </div>
@@ -199,7 +203,7 @@
           <div class="row">
             <div class="col-md-6 col-lg-6">
               <a href="images/img_1.jpg" class="media-1" data-fancybox="gallery">
-                <img src="./images/tttt/BMW-MY24-X5-HP-Secondary-FMA-Desktop.avif" alt="Image" class="img-fluid">
+                <img src="./images/required/BMW-MY24-X5-HP-Secondary-FMA-Desktop.avif" alt="Image" class="img-fluid">
                 <div class="media-1-content">
                   <h2>THE 2024 BMW iX</h2>
                   
@@ -209,7 +213,7 @@
             </div>
             <div class="col-md-6 col-lg-6">
               <a href="images/img_2.jpg" class="media-1" data-fancybox="gallery">
-                <img src="images/tttt/BMW-MY23-X7-Secondary-FMA-Desktop.avif" alt="Image" class="img-fluid">
+                <img src="images/required/BMW-MY23-X7-Secondary-FMA-Desktop.avif" alt="Image" class="img-fluid">
                 <div class="media-1-content">
                   <h2>THE NEW 2024 BMW X5</h2>
 
@@ -222,7 +226,7 @@
             
             <div class="col-md-6 col-lg-6">
               <a href="images/img_5.jpg" class="media-1" data-fancybox="gallery">
-                <img src="images/tttt/BMW-Secondary-FMA-Homepage-Cookied-Tile-01-Desktop.avif" alt="Image" class="img-fluid">
+                <img src="images/required/BMW-Secondary-FMA-Homepage-Cookied-Tile-01-Desktop.avif" alt="Image" class="img-fluid">
                 <div class="media-1-content">
                   <h2>THE 2024 BMW X7</h2>
                     
@@ -232,7 +236,7 @@
             </div>
             <div class="col-md-6 col-lg-6">
               <a href="images/img_6.jpg" class="media-1" data-fancybox="gallery">
-                <img src="images/tttt/BMW-Secondary-FMA-Homepage-Tile-04-Desktop.avif" alt="Image" class="img-fluid">
+                <img src="images/required/BMW-Secondary-FMA-Homepage-Tile-04-Desktop.avif" alt="Image" class="img-fluid">
                 <div class="media-1-content">
                   <h2>THE 2024 BMW 8 SERIES</h2>
 
@@ -250,10 +254,10 @@
         
         <p class="lead text-center font-weight-bold"> RACE-READY MODELS</p>
 
-          <img src="./images/m8.jpg" alt="Image" class="img-fluid mb-5">
+          <img src="./images/required/m8.jpg" alt="Image" class="img-fluid mb-5">
           
         
-        <h3 class="lead"><img src="./images/Mlogo.jpg" class="logo-msports text-center"></h3>
+        <h3 class="lead"><img src="./images/required/Mlogo.jpg" class="logo-msports text-center"></h3>
         <h3 class="lead">The BMW M2 CS Racing.</h3>
         </div>
       </section>
@@ -307,7 +311,7 @@
         <section class="section ft-feature-1">
         <div class="">
 
-          <img src="./images/BMW-Motorsports12.jpg" alt="Image" class="img-fluid mb-14 d-block w-auto">
+          <img src="./images/required/banner.jpg" alt="Image" class="img-fluid mb-14 d-block w-auto">
 
         </div>
       </section>
