@@ -91,15 +91,15 @@
       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner pics">
     <div class="carousel-item active header_slider1" >
-      <img class="d-flex w-100 " src="./images/bmwpicforcars.jpg" alt="First slide">  
+      <img class="d-flex w-100 " src="./Admin/dynamic/images/bmwpicforcars.jpg" alt="First slide">  
     </div>
     
     <div class="carousel-item header_slider1">
-      <img class="d-block w-100" src="./images/required/bmwsec.jpg" alt="Second slide">
+      <img class="d-block w-100" src="./Admin/dynamic/images/required/bmwsec.jpg" alt="Second slide">
     </div>
 
     <div class="carousel-item header_slider1">
-      <img class="d-block w-100" src="./images/required/bmwth.jpg" alt="Third slide">
+      <img class="d-block w-100" src="./Admin/dynamic/images/required/bmwth.jpg" alt="Third slide">
     </div>
   </div>
 
@@ -123,18 +123,19 @@
         <div class="container">
           <div class="row car-rows">
           <?php  
-           $sql = "SELECT * FROM cars where category = 'M series'";
+           $sql = "SELECT * FROM cars where category = 'sports'";
            $resultforindex = $conn->query($sql); 
            if(mysqli_num_rows($resultforindex)>0){
             $data = mysqli_fetch_all($resultforindex, MYSQLI_ASSOC);
                 for($i=0; $i<count($data); $i++){
 ?>
 <div class="card " style="width: 22rem;">
-  <img class="card-img-top" src="./images/bmwforcars.png" alt="Card image cap">
+  <img class="card-img-top" src="./Admin/dynamic/<?php echo $data[$i]["image1"];?>" alt="Card image cap">
   <div class="card-body">
-    <h5 class="card-title"><?php echo $data[$i]["Model"];?></h5>
-    <p class="card-text"><?php echo $data[$i]["Model"];?></p>
-    <a href="#" class="btn btn-primary">Explore</a>
+    <h5 class="card-title"><?php echo $data[$i]["model"];?></h5>
+    <p class="card-text"><?php echo $data[$i]["model"];?></p>
+    <a href="car.php?id=<?php echo $data[$i]["id"];?>" class="btn btn-primary">Explore</a>
+
   </div>
 </div>
           <?php 
@@ -171,11 +172,11 @@
                 for($i=0; $i<count($data); $i++){
 ?>
 <div class="card " style="width: 22rem;">
-  <img class="card-img-top" src="./images/bmwforcars.png" alt="Card image cap">
+  <img class="card-img-top" src="./Admin/dynamic/<?php echo $data[$i]["image1"];?>" alt="Card image cap">
   <div class="card-body">
-    <h5 class="card-title"><?php echo $data[$i]["Model"];?></h5>
-    <p class="card-text"><?php echo $data[$i]["Model"];?></p>
-    <a href="#" class="btn btn-primary">Explore</a>
+    <h5 class="card-title"><?php echo $data[$i]["model"];?></h5>
+    <p class="card-text"><?php echo $data[$i]["model"];?></p>
+    <a href="car.php?id=<?php echo $data[$i]["id"];?>" class="btn btn-primary">Explore</a>
   </div>
 </div>
           <?php 
@@ -212,11 +213,11 @@
                 for($i=0; $i<count($data); $i++){
 ?>
 <div class="card " style="width: 22rem;">
-  <img class="card-img-top" src="./images/bmwforcars.png" alt="Card image cap">
+  <img class="card-img-top" src="./Admin/dynamic/<?php echo $data[$i]["image1"];?>" alt="Card image cap">
   <div class="card-body">
-    <h5 class="card-title"><?php echo $data[$i]["Model"];?></h5>
-    <p class="card-text"><?php echo $data[$i]["Model"];?></p>
-    <a href="#" class="btn btn-primary">Explore</a>
+    <h5 class="card-title"><?php echo $data[$i]["model"];?></h5>
+    <p class="card-text"><?php echo $data[$i]["model"];?></p>
+    <a href="car.php?id=<?php echo $data[$i]["id"];?>" class="btn btn-primary">Explore</a>
   </div>
 </div>
           <?php 

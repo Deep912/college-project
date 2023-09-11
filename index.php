@@ -90,7 +90,7 @@
     </header>
     
       <div class="header_slider">
-        <img src="./images/required/sliderimg.jpg" class="d-block w-100" alt="...">
+        <img src="./Admin/dynamic/images/required/sliderimg.jpg" class="d-block w-100" alt="...">
         <div class="col-md-12 centered" data-aos="fade-up" data-aos-delay="400">
 
 <div class="row justify-content-center mb-4 ">
@@ -182,7 +182,7 @@
             </div>
 
             <div class="col-lg-6" data-jarallax-element="50">
-              <img src="images/required/sidebar-second.jpg" alt="Image" class="img-fluid">
+              <img src="./Admin/dynamic/images/required/sidebar-second.jpg" alt="Image" class="img-fluid">
             </div>
           </div>
         </div>
@@ -203,7 +203,7 @@
           <div class="row">
             <div class="col-md-6 col-lg-6">
               <a href="images/img_1.jpg" class="media-1" data-fancybox="gallery">
-                <img src="./images/required/BMW-MY24-X5-HP-Secondary-FMA-Desktop.avif" alt="Image" class="img-fluid">
+                <img src="./Admin/dynamic/images/required/BMW-MY24-X5-HP-Secondary-FMA-Desktop.avif" alt="Image" class="img-fluid">
                 <div class="media-1-content">
                   <h2>THE 2024 BMW iX</h2>
                   
@@ -213,7 +213,7 @@
             </div>
             <div class="col-md-6 col-lg-6">
               <a href="images/img_2.jpg" class="media-1" data-fancybox="gallery">
-                <img src="images/required/BMW-MY23-X7-Secondary-FMA-Desktop.avif" alt="Image" class="img-fluid">
+                <img src="./Admin/dynamic/images/required/BMW-MY23-X7-Secondary-FMA-Desktop.avif" alt="Image" class="img-fluid">
                 <div class="media-1-content">
                   <h2>THE NEW 2024 BMW X5</h2>
 
@@ -226,7 +226,7 @@
             
             <div class="col-md-6 col-lg-6">
               <a href="images/img_5.jpg" class="media-1" data-fancybox="gallery">
-                <img src="images/required/BMW-Secondary-FMA-Homepage-Cookied-Tile-01-Desktop.avif" alt="Image" class="img-fluid">
+                <img src="./Admin/dynamic/images/required/BMW-Secondary-FMA-Homepage-Cookied-Tile-01-Desktop.avif" alt="Image" class="img-fluid">
                 <div class="media-1-content">
                   <h2>THE 2024 BMW X7</h2>
                     
@@ -236,7 +236,7 @@
             </div>
             <div class="col-md-6 col-lg-6">
               <a href="images/img_6.jpg" class="media-1" data-fancybox="gallery">
-                <img src="images/required/BMW-Secondary-FMA-Homepage-Tile-04-Desktop.avif" alt="Image" class="img-fluid">
+                <img src="./Admin/dynamic/images/required/BMW-Secondary-FMA-Homepage-Tile-04-Desktop.avif" alt="Image" class="img-fluid">
                 <div class="media-1-content">
                   <h2>THE 2024 BMW 8 SERIES</h2>
 
@@ -254,10 +254,10 @@
         
         <p class="lead text-center font-weight-bold"> RACE-READY MODELS</p>
 
-          <img src="./images/required/m8.jpg" alt="Image" class="img-fluid mb-5">
+          <img src="./Admin/dynamic/images/required/m8.jpg" alt="Image" class="img-fluid mb-5">
           
         
-        <h3 class="lead"><img src="./images/required/Mlogo.jpg" class="logo-msports text-center"></h3>
+        <h3 class="lead"><img src="./Admin/dynamic/images/required/Mlogo.jpg" class="logo-msports text-center"></h3>
         <h3 class="lead">The BMW M2 CS Racing.</h3>
         </div>
       </section>
@@ -310,7 +310,7 @@
         <section class="section ft-feature-1">
         <div class="">
 
-          <img src="./images/required/banner.jpg" alt="Image" class="img-fluid mb-14 d-block w-auto">
+          <img src="./Admin/dynamic/images/required/banner.jpg" alt="Image" class="img-fluid mb-14 d-block w-auto">
 
         </div>
       </section>

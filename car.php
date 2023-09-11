@@ -93,13 +93,13 @@ $row = mysqli_fetch_assoc($result);
     </header>
 
     <div class="header_slider">
-        <img src="./images/required/sliderimg.jpg" class="d-block w-100" alt="...">
+        <img src="./Admin/dynamic/<?php echo $row["image3"];?>" class="d-block w-100" alt="...">
         <div class="col-md-12 centered" data-aos="fade-up" data-aos-delay="400">
 
 </div>
       </div>
   </div>
-  <div class="row justify-content-center mb-5">
+  <div class="row justify-content-center mb-2 mt-5">
             <div class="col-md-8 text-center aos-init aos-animate" data-aos="fade-up">
               <h2 class="site-section-heading text-center"><?php echo $row['model']; ?> </h2>
             </div>
@@ -107,32 +107,47 @@ $row = mysqli_fetch_assoc($result);
   <div class="container-card">
         <div class="item">
             <div class="image">
-                <img src="./Admin/dynamic/images/bmwforcars.png" alt="Car 1">
+                <img src="./Admin/dynamic/<?php echo $row["image2"];?>" alt="Car 1">
             </div>
         </div>
         <div class="item">
             <div class="details">
-                <h2><?php echo $row['engine']; ?></h2>
-                <p>Description of Car 1.</p>
+                <h3>TECHNICAL DATA OF <b><?php echo $row['model']; ?> </b></h3>
+                <p><b>Engine:<br></b><?php echo $row['engine']; ?></p>
+                <p><b>Transmission:<br></b><?php echo $row['transmission']; ?></p>
+                <p><b>Top <em>speed:</em><br></b><?php echo $row['speed']; ?> KMPH</p>
             </div>
         </div>
         <div class="item">
             <div class="details">
-                <h2>Car 2</h2>
-                <p>Description of Car 2.</p>
+                
+                <p><b>DriveTrain:<br></b><?php echo $row['drivetrain']; ?> </p>
+                <p><b>Fuel:<br></b><?php echo $row['fuel']; ?> </p>
+                <p><b>Color:<br></b><?php echo $row['color']; ?> </p>
+                <p><b><br></b><?php echo $row['details']; ?> </p>
+                <h3 class="text-center"><b>Price<br></b><?php echo $row['price']; ?> </h3>
+                
             </div>
         </div>
         <div class="item">
             <div class="image">
-                <img src="./Admin/dynamic/images/bmwforcars.png" alt="Car 2">
+                <img src="./Admin/dynamic/<?php echo $row["image1"];?>" alt="Car 2">
             </div>
         </div>
        
 </div>
-    
+    <!-- banner part  -->
 
 
+          
 
+          <section class="section ft-feature-1">
+        <div class="">
+
+          <img src="./Admin/dynamic/<?php echo $row["image2"];?>" alt="Image" class="img-fluid mb-14 d-block w-auto">
+
+        </div>
+      </section>
 <!-- footer section start -->
 
 
