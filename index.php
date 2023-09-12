@@ -37,7 +37,7 @@
   <link rel="stylesheet" href="css/customstyle.css">
   <link rel="stylesheet" href="css/cardsstyle.css">
 
-  <title>Strategy &mdash; Free Bootstrap Template by Untree.co</title>
+  <title>BMW | Home</title>
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
@@ -58,7 +58,7 @@
         <div class="row align-items-center">
 
           <div class="col-11 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="mb-0">Strategy<span class="text-primary">.</span> </a></h1>
+            <h1 class="mb-0 site-logo"><a href="index.html" class="mb-0">BMW<span class="text-primary">.</span> </a></h1>
           </div>
           <div class="col-12 col-md-10 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right" role="navigation">
@@ -314,11 +314,11 @@
 
         </div>
       </section>
-      <section>
+      <section id="services-section">
         <div class="container">
           <div class="row justify-content-center mb-5">
             <div class="col-md-8 text-center" data-aos="fade-up">
-              <h2 class="site-section-heading text-center">Ownership starts here.</h2>
+              <h2 class="site-section-heading text-center " >Ownership starts here.</h2>
             </div>
           </div>
           <div class="row align-items-stretch">
@@ -371,7 +371,7 @@
         </div>
       </section>
 
-      <div class="site-section" id="about-section">
+      <div class="site-section" id="blog-section">
         <div class="container">
           <div class="row mb-5">
 
