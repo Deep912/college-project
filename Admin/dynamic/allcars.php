@@ -39,8 +39,8 @@
     <li class="table-header">
       <div class="col col-1">Id</div>
       <div class="col col-2">Model</div>
-      <div class="col col-3">price</div>
-      <div class="col col-4">category</div>
+      <div class="col col-3">category</div>
+            <div class="col col-4">Action</div>
     </li>
     <?php 
     $sql = "SELECT * FROM cars";
@@ -52,9 +52,9 @@
     ?>
     <li class="table-row">
       <div class="col col-1" data-label="Id"><?php echo $data[$i]["id"];?></div>
-      <div class="col col-2" data-label="Model"><?php echo $data[$i]["Model"];?></div>
-      <div class="col col-3" data-label="price"><?php echo $data[$i]["Price"];?></div>
-      <div class="col col-4" data-label="category"><?php echo $data[$i]["category"];?></div>
+      <div class="col col-2" data-label="Model"><?php echo $data[$i]["model"];?></div>
+      <div class="col col-3" data-label="category"><?php echo $data[$i]["category"];?></div>
+      <div class="col col-4" data-label="category"><a href="deletecar.php?id=<?php echo $data[$i]['id'];?>">Delete</a></div>
     </li>
     <?php 
          }} else {

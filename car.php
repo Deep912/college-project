@@ -13,7 +13,8 @@ $row = mysqli_fetch_assoc($result);
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="Untree.co">
-  <link rel="shortcut icon" href="favicon.png">
+  <link rel="shortcut icon" href="./Admin/dynamic/images/required/BMWlogo.png">
+
 
   <meta name="description" content="" />
   <meta name="keywords" content="" />
@@ -40,7 +41,7 @@ $row = mysqli_fetch_assoc($result);
   <link rel="stylesheet" href="css/cardsstyle.css">
   <link rel="stylesheet" href="css/styles.css">
 
-  <title>Strategy &mdash; Free Bootstrap Template by Untree.co</title>
+  <title>BMW | Models</title>
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
@@ -61,7 +62,7 @@ $row = mysqli_fetch_assoc($result);
         <div class="row align-items-center">
 
           <div class="col-11 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="mb-0">Strategy<span class="text-primary">.</span> </a></h1>
+            <h1 class="mb-0 site-logo"><a href="index.html" class="mb-0">BMW<span class="text-primary">.</span> </a></h1>
           </div>
           <div class="col-12 col-md-10 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right" role="navigation">
@@ -151,25 +152,17 @@ $row = mysqli_fetch_assoc($result);
 <!-- footer section start -->
 
 
-    <footer class="site-footer">
+<footer class="site-footer">
         <div class="container">
           <div class="row">
             <div class="col-md-9">
               <div class="row">
-                <div class="col-md-5">
-                  <h2 class="footer-heading mb-4">About Us</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
+                <div class="col-md-6">
+                  <h2 class="footer-heading mb-4">CONTACTS.</h2>
+                  <p>If you are unable to find the information you are looking for on the BMW Group website, please do not hesitate to contact our Customer Service:</p>
                 </div>
-                <div class="col-md-3 ml-auto">
-                  <h2 class="footer-heading mb-4">Features</h2>
-                  <ul class="list-unstyled">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                  </ul>
-                </div>
-                <div class="col-md-3">
+               
+                <div class="col-md-4">
                   <h2 class="footer-heading mb-4">Follow Us</h2>
                   <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
                   <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
@@ -179,7 +172,7 @@ $row = mysqli_fetch_assoc($result);
               </div>
             </div>
             <div class="col-md-3">
-              <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
+              <h2 class="footer-heading mb-4">Subscribe For Latest News</h2>
               <form action="#" method="post" class="subcription-form">
                 <div class="input-group mb-3">
                   <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
@@ -193,7 +186,7 @@ $row = mysqli_fetch_assoc($result);
           <div class="row pt-5 mt-5 text-center">
             <div class="col-md-12">
               <div class="border-top pt-5">
-                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co">Untree.co</a>  Distributed By <a href="https://themewagon.com">ThemeWagon</a> <!-- License information: https://untree.co/license/ -->
+                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by Deep Chhegaliya <!-- License information: https://untree.co/license/ -->
                 </p>
               </div>
             </div>

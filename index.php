@@ -11,7 +11,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="Untree.co">
-  <link rel="shortcut icon" href="favicon.png">
+  <link rel="shortcut icon" href="./Admin/dynamic/images/required/BMWlogo.png">
 
   <meta name="description" content="" />
   <meta name="keywords" content="" />
@@ -324,32 +324,29 @@
           <div class="row align-items-stretch">
             <div class="col-md-6 col-lg-3 mb-3 mb-lg-3" data-aos="fade-up">
               <div class="unit-4 d-flex">
-                <div class="unit-4-icon mr-4"><span class="text-primary"></span><img src="./images/svgs/arrow-repeat.svg">  </div>
+                <div class="unit-4-icon mr-4"><span class="text-primary"></span><img src="./Admin/dynamic/images/svgs/arrow-repeat.svg">  </div>
                 <div>
                   <h3>Trade-In Value</h3>
                   <p>Get the latest information on your vehicle’s trade-in value today. </p>
-                  <p><a href="#">Learn More</a></p>
                 </div>
               </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-3 mb-lg-3" data-aos="fade-up" data-aos-delay="100">
               <div class="unit-4 d-flex">
-                <div class="unit-4-icon mr-4"><span class="text-primary"><img src="./images/svgs/speedometer2.svg" ></span></div>
+                <div class="unit-4-icon mr-4"><span class="text-primary"><img src="./Admin/dynamic/images/svgs/speedometer2.svg" ></span></div>
                 <div>
                   
                   <h3>Check Your Credit Score</h3>
                   <p>See where you stand on your journey to owning a BMW.<p>
-                  <p><a href="#">Learn More</a></p>
                 </div>
               </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-3 mb-lg-3" data-aos="fade-up" data-aos-delay="200">
               <div class="unit-4 d-flex">
-                <div class="unit-4-icon mr-4"><span class="text-primary"></span><img src="./images/svgs/currency-dollar.svg" ></div>
+                <div class="unit-4-icon mr-4"><span class="text-primary"></span><img src="./Admin/dynamic/images/svgs/currency-dollar.svg" ></div>
                 <div>
                   <h3>Apply for Financing</h3>
                   <p>Own the BMW of your dreams with BMW Financial Services.</p>
-                  <p><a href="#">Learn More</a></p>
                 </div>
               </div>
             </div>
@@ -357,12 +354,11 @@
 
             <div class="col-md-6 col-lg-3 mb-3 mb-lg-3" data-aos="fade-up" data-aos-delay="300">
               <div class="unit-4 d-flex">
-                <div class="unit-4-icon mr-4"><span class="text-primary"></span><img src="./images/svgs/envelope.svg" ></div>
+                <div class="unit-4-icon mr-4"><span class="text-primary"></span><img src="./Admin/dynamic/images/svgs/envelope.svg" ></div>
                 <div>
                   <h3>Stay Connected</h3>
                   <p>
                   Receive the latest offers, releases, and news from BMW.</p>
-                  <p><a href="#">Learn More</a></p>
                 </div>
               </div>
             </div>
@@ -373,10 +369,10 @@
 
       <div class="site-section" id="blog-section">
         <div class="container">
-          <div class="row mb-5">
+          <div class="row mb-6">
 
-            <div class="col-md-5 ml-auto mb-5 order-md-2"  data-jarallax-element="50">
-              <img src="images/img_13.jpg" alt="Image" class="img-fluid rounded">
+            <div class="col-md-6 ml-auto mb-6 order-md-2"  data-jarallax-element="50">
+              <img src="./Admin/dynamic/images/required/about-us.jpg" alt="Image" class="img-fluid rounded">
             </div>
             <div class="col-md-6 order-md-1"  data-jarallax-element="-50">
 
@@ -387,16 +383,19 @@
                     <h2 class="site-section-heading">About Us</h2>
                   </div>
                 </div>
-                <div class="col-12 mb-4">
-                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet incidunt magnam corrupti, odit eos harum quaerat nostrum voluptatibus aspernatur eligendi accusantium cum, impedit blanditiis voluptate commodi doloribus, nemo dignissimos recusandae.</p>
+                <div class="col-12 mb-4"><h4>The BMW Group company profile.</h4>
+                  <p class="lead">
+The special fascination of the BMW Group not only lies in its products and technology, but also in the company’s history, 
+written by inventors, pioneers and brilliant designers. Today, the BMW Group, with more than 30 production and assembly facilities as well as 
+    a global sales network, 
+is the world’s leading manufacturer of premium automobiles and motorcycles, and provider of premium financial and mobility services.</p>
                 </div>
                 <div class="col-md-12 mb-md-5 mb-0 col-lg-6">
                   <div class="unit-4">
                     <div class="unit-4-icon mr-4 mb-3"><span class="text-primary icon-phonelink"></span></div>
                     <div>
-                      <h3>Web &amp; Mobile Specialties</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis consect.</p>
-                      <p class="mb-0"><a href="#">Learn More</a></p>
+                      <h3>Production today and tomorrow.</h3>
+                      <p>The BMW Group sets trends in production technology and sustainability as an innovation leader with an intelligent material mix</p>
                     </div>
                   </div>
                 </div>
@@ -404,9 +403,8 @@
                   <div class="unit-4">
                     <div class="unit-4-icon mr-4 mb-3"><span class="text-primary icon-extension"></span></div>
                     <div>
-                      <h3>Intuitive Thinkers</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis.</p>
-                      <p class="mb-0"><a href="#">Learn More</a></p>
+                      <h3>Sustainability: the guiding principle for all our actions.</h3>
+                      <p>Long-term thinking and responsible action are the basis of economic success. </p>
                     </div>
                   </div>
                 </div>
@@ -428,10 +426,11 @@
           <div class="row">
             <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
               <div class="person text-center bg-white p-4">
-                <img src="images/person_2.jpg" alt="Image" class="img-fluid rounded-circle mb-3">
-                <h3>John Rooster</h3>
-                <p class="position text-muted">Co-Founder, President</p>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
+                <img src="./Admin/dynamic/images/required/BMW-ceo2.jpg" alt="Image" class="img-fluid rounded-circle mb-3">
+                <h3>Oliver Zipse</h3>
+                <p class="position text-muted">CEO</p>
+                <p class="mb-4">Year/Place of birth: 1964, Heidelberg (Germany)
+Nationality: German<br>Since 16 August 2019: Chairman of the Board of Management of BMW AG</p>
                 <ul class="ul-social-circle">
                   <li><a href="#"><span class="icon-facebook"></span></a></li>
                   <li><a href="#"><span class="icon-twitter"></span></a></li>
@@ -442,10 +441,11 @@
             </div>
             <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
               <div class="person text-center bg-white p-4">
-                <img src="images/person_3.jpg" alt="Image" class="img-fluid rounded-circle mb-3">
-                <h3>Tom Sharp</h3>
-                <p class="position text-muted">Co-Founder, COO</p>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
+                <img src="./Admin/dynamic/images/required/BMW-sales.jpg" alt="Image" class="img-fluid rounded-circle mb-3">
+                <h3>PIETER NOTA</h3>
+                <p class="position text-muted">Customer, Brands, Sales</p>
+                <p class="mb-4">Year/Place of birth: 1964, Wageningen (Netherlands)
+Nationality: Dutch<br>Since 1 April 2019: Member of the Board of Management of BMW AG, Customer, Brands, Sales </p>
                 <ul class="ul-social-circle">
                   <li><a href="#"><span class="icon-facebook"></span></a></li>
                   <li><a href="#"><span class="icon-twitter"></span></a></li>
@@ -456,10 +456,11 @@
             </div>
             <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
               <div class="person text-center bg-white p-4">
-                <img src="images/person_4.jpg" alt="Image" class="img-fluid rounded-circle mb-3">
-                <h3>Winston Hodson</h3>
-                <p class="position text-muted">Marketing</p>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate tempore suscipit inventore deserunt tenetur.</p>
+                <img src="./Admin/dynamic/images/required/BMW-production.jpg" alt="Image" class="img-fluid rounded-circle mb-3">
+                <h3>DR. MILAN NEDELJKOVIĆ</h3>
+                <p class="position text-muted">Production</p>
+                <p class="mb-4">Year/Place of birth: 1969, Krusevac (Serbia)
+Nationality: Serbian.<br>Since 1 October 2019: Member of the Board of Management of BMW AG, Production</p>
                 <ul class="ul-social-circle">
                   <li><a href="#"><span class="icon-facebook"></span></a></li>
                   <li><a href="#"><span class="icon-twitter"></span></a></li>
@@ -547,20 +548,12 @@
           <div class="row">
             <div class="col-md-9">
               <div class="row">
-                <div class="col-md-5">
-                  <h2 class="footer-heading mb-4">About Us</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
+                <div class="col-md-6">
+                  <h2 class="footer-heading mb-4">CONTACTS.</h2>
+                  <p>If you are unable to find the information you are looking for on the BMW Group website, please do not hesitate to contact our Customer Service:</p>
                 </div>
-                <div class="col-md-3 ml-auto">
-                  <h2 class="footer-heading mb-4">Features</h2>
-                  <ul class="list-unstyled">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                  </ul>
-                </div>
-                <div class="col-md-3">
+               
+                <div class="col-md-4">
                   <h2 class="footer-heading mb-4">Follow Us</h2>
                   <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
                   <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
@@ -570,7 +563,7 @@
               </div>
             </div>
             <div class="col-md-3">
-              <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
+              <h2 class="footer-heading mb-4">Subscribe For Latest News</h2>
               <form action="#" method="post" class="subcription-form">
                 <div class="input-group mb-3">
                   <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
@@ -584,7 +577,7 @@
           <div class="row pt-5 mt-5 text-center">
             <div class="col-md-12">
               <div class="border-top pt-5">
-                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co">Untree.co</a>  Distributed By <a href="https://themewagon.com">ThemeWagon</a> <!-- License information: https://untree.co/license/ -->
+                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by Deep Chhegaliya <!-- License information: https://untree.co/license/ -->
                 </p>
               </div>
             </div>

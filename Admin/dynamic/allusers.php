@@ -40,7 +40,7 @@
       <div class="col col-1">Id</div>
       <div class="col col-2">name</div>
       <div class="col col-3">email</div>
-      <div class="col col-4">password</div>
+      <div class="col col-4">Action</div>
     </li>
     <?php 
     $sql = "SELECT * FROM users";
@@ -54,7 +54,7 @@
       <div class="col col-1" data-label="Id"><?php echo $data[$i]["id"];?></div>
       <div class="col col-2" data-label="Model"><?php echo $data[$i]["name"];?></div>
       <div class="col col-3" data-label="price"><?php echo $data[$i]["email"];?></div>
-      <div class="col col-4" data-label="category"><?php echo $data[$i]["password"];?></div>
+     <div class="col col-4" data-label="category"><a href="deleteuser.php?id=<?php echo $data[$i]['id'];?>" >Delete</a></div>
     </li>
     <?php 
          }} else {
