@@ -126,7 +126,13 @@ $row = mysqli_fetch_assoc($result);
                 <p><b>Fuel:<br></b><?php echo $row['fuel']; ?> </p>
                 <p><b>Color:<br></b><?php echo $row['color']; ?> </p>
                 <p><b><br></b><?php echo $row['details']; ?> </p>
-                <h3 class="text-center"><b>Price<br></b><?php echo $row['price']; ?> </h3>
+                <h3 class="text-center"><b>Price<br></b><?php echo $row['price']; ?> 
+              
+                <?php if (isset($_SESSION['user'])) {?>
+                  <a href="./dynamic/booking.php?carid=<?php echo $row['id']; ?>" class="btn btn-primary">Book Now</a>
+                  <?php } else {?>
+                    login to book
+                <?php } ?>
                 
             </div>
         </div>
