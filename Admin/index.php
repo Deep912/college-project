@@ -27,6 +27,9 @@ if (isset($_SESSION['admin_logged_in'])) {
   <link rel="stylesheet" href="css/vertical-layout-light/style.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="images/favicon.png" />
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
   <div class="container-scroller">
@@ -437,8 +440,57 @@ if (isset($_SESSION['admin_logged_in'])) {
                 </div>
               </div>
             </div>
-        <h2>welcome to the BMW website admin panel</h2>
-          </div>
+        <h2 class="text-center">welcome </h2><span><br></span>
+        <div class="manu row text-center">
+        <div class="card col-sm-4" style="width: 18rem;">
+  <div class="card-body mt-4" >
+    <h5 class="card-title "><a href="./dynamic/pending.php">Pending Orders</a></h5>
+    
+   
+  </div>
+</div>
+<div class="card col-sm-4" style="width: 18rem;">
+  <div class="card-body mt-4">
+    <h5 class="card-title"><a href="./dynamic/allcars.php">All Cars</a></h5>
+    
+  </div>
+</div>
+<div class="card col-sm-4" style="width: 18rem;">
+  <div class="card-body mt-4">
+    <h5 class="card-title"><a href="./addcars.html" >Add car </a></h5>
+    
+  </div>
+</div>
+
+        </div>
+        <span><br></span>
+        <div class="manu row text-center">
+        <div class="card col-sm-4" style="width: 18rem;">
+  <div class="card-body mt-4" >
+    <h5 class="card-title "><a href="./dynamic/allusers.php">All Users</a></h5>
+    
+   
+  </div>
+</div>
+<div class="card col-sm-4" style="width: 18rem;">
+  <div class="card-body mt-4">
+    <h5 class="card-title">More</h5>
+    
+  </div>
+</div>
+<div class="card col-sm-4" style="width: 18rem;">
+  <div class="card-body mt-4">
+    <h5 class="card-title">More</h5>
+    
+  </div>
+</div>
+
+        </div>
+        
+      
+      
+      
+      </div>
         </div>
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->

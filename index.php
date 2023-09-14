@@ -128,9 +128,9 @@
       </figure>
       <div class="article-body">
         <h2><?php echo $data[$i]["model"];?></h2>
-        <h2><?php echo $data[$i]["speed"];?></h2>
+        <p> top Speed <?php echo $data[$i]["speed"];?></p>
         <p>
-        <?php echo $data[$i]["details"];?>
+        <?php echo $data[$i]["capacity"];?>
       </p>
       <p>
         <?php echo $data[$i]["engine"];?>

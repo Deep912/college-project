@@ -94,7 +94,7 @@ $row = mysqli_fetch_assoc($result);
     </header>
 
     <div class="header_slider">
-        <img src="./Admin/dynamic/<?php echo $row["image3"];?>" class="d-block w-100" alt="...">
+        <img src="./Admin/dynamic/<?php echo $row["image3"];?>" class="d-block w-100" style="height: auto;" alt="...">
         <div class="col-md-12 centered" data-aos="fade-up" data-aos-delay="400">
 
 </div>

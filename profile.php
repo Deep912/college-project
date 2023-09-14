@@ -29,7 +29,7 @@ $email = $_SESSION['email'];
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="Untree.co">
-  <link rel="shortcut icon" href="favicon.png">
+  <link rel="shortcut icon" href="./Admin/dynamic/images/required/BMWlogo.png">
 
   <meta name="description" content="" />
   <meta name="keywords" content="" />
@@ -54,7 +54,7 @@ $email = $_SESSION['email'];
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/customstyle.css">
   <link rel="stylesheet" href="css/profilestyle.css">
-  <title>Strategy &mdash; Free Bootstrap Template by Untree.co</title>
+  <title>BMW</title>
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
@@ -75,7 +75,7 @@ $email = $_SESSION['email'];
         <div class="row align-items-center">
 
           <div class="col-11 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="mb-0">Strategy<span class="text-primary">.</span> </a></h1>
+            <h1 class="mb-0 site-logo"><a href="index.html" class="mb-0">BMW<span class="text-primary"></span> </a></h1>
           </div>
           <div class="col-12 col-md-10 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right" role="navigation">
