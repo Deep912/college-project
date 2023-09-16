@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Car Details</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
     <div class="container-card">
         <div class="item">
@@ -52,4 +54,5 @@
         </div>
     </div>
 </body>
+
 </html>
