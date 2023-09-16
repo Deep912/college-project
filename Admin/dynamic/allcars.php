@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include 'connection.php';?>
+<?php include 'connection.php'; ?>
 
 <head>
   <!-- Required meta tags -->
@@ -26,46 +26,48 @@
   <!-- endinject -->
   <link rel="shortcut icon" href="../images/favicon.png" />
 </head>
+
 <body>
-  
-    <!-- partial:partials/_navbar.html -->
+
+  <!-- partial:partials/_navbar.html -->
 
   <!-- container-scroller -->
   <div class="container">
-<a href="../index.php">back to admin</a>
+    <a href="../index.php">back to admin</a>
 
-  <h2>ALL CARS<small></small></h2>
-  <ul class="responsive-table">
-    <li class="table-header">
-      <div class="col col-1">Id</div>
-      <div class="col col-2">Model</div>
-      <div class="col col-3">category</div>
-            <div class="col col-4">Action</div>
-    </li>
-    <?php 
-    $sql = "SELECT * FROM cars";
-    $resultforindex = $conn->query($sql); 
-    if(mysqli_num_rows($resultforindex)>0){
-     $data = mysqli_fetch_all($resultforindex, MYSQLI_ASSOC);
-         for($i=0; $i<count($data); $i++){
-    
-    ?>
-    <li class="table-row">
-      <div class="col col-1" data-label="Id"><?php echo $data[$i]["id"];?></div>
-      <div class="col col-2" data-label="Model"><?php echo $data[$i]["model"];?></div>
-      <div class="col col-3" data-label="category"><?php echo $data[$i]["category"];?></div>
-      <div class="col col-4" data-label="category"><a href="deletecar.php?id=<?php echo $data[$i]['id'];?>">Delete</a></div>
-    </li>
-    <?php 
-         }} else {
-           ?>
-<h2>there was an error</h2>
-            <?php 
-           }
-           ?> 
-  </ul>
-</div>
-<!-- plugins:js -->
+    <h2>ALL CARS<small></small></h2>
+    <ul class="responsive-table">
+      <li class="table-header">
+        <div class="col col-1">Id</div>
+        <div class="col col-2">Model</div>
+        <div class="col col-3">category</div>
+        <div class="col col-4">Action</div>
+      </li>
+      <?php
+      $sql = "SELECT * FROM cars";
+      $resultforindex = $conn->query($sql);
+      if (mysqli_num_rows($resultforindex) > 0) {
+        $data = mysqli_fetch_all($resultforindex, MYSQLI_ASSOC);
+        for ($i = 0; $i < count($data); $i++) {
+
+      ?>
+          <li class="table-row">
+            <div class="col col-1" data-label="Id"><?php echo $data[$i]["id"]; ?></div>
+            <div class="col col-2" data-label="Model"><?php echo $data[$i]["model"]; ?></div>
+            <div class="col col-3" data-label="category"><?php echo $data[$i]["category"]; ?></div>
+            <div class="col col-4" data-label="category"><a href="deletecar.php?id=<?php echo $data[$i]['id']; ?>">Delete</a></div>
+          </li>
+        <?php
+        }
+      } else {
+        ?>
+        <h2>there was an error</h2>
+      <?php
+      }
+      ?>
+    </ul>
+  </div>
+  <!-- plugins:js -->
   <script src="vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page -->
@@ -89,8 +91,7 @@
 
 
 
-  
+
 </body>
 
 </html>
-

@@ -54,7 +54,7 @@ if (isset($_SESSION['user'])) {
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/customstyle.css">
     <link rel="stylesheet" href="css/profilestyle.css">
-    <title>BMW</title>
+    <title>BMW</title>`
   </head>
 
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">

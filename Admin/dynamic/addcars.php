@@ -1,5 +1,5 @@
 <?php
-    include 'connection.php';
+include 'connection.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Process the uploaded image
     $target_dir = "images/cars/";
@@ -28,17 +28,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     move_uploaded_file($_FILES["car_image3"]["tmp_name"], $target_file3);
     move_uploaded_file($_FILES["car_image4"]["tmp_name"], $target_file4);
 
-        $sql = "INSERT INTO cars (image1,image2,image3,image4,category,model,color,year,price,engine,capacity,output,transmission,speed,fuel,mileage,drivetrain,details) VALUES ('$target_file1','$target_file2','$target_file3','$target_file4','$category','$model','$color','$year','$price','$engine','$capacity','$output','$transmission','$speed','$fuel','$mileage','$drivetrain','$details' )";
-        if ($conn->query($sql) === TRUE) {
-            echo "Car added successfully!";
-        } else {
-            echo "Error: " . $sql;
-        }
-
-        $conn->close();
+    $sql = "INSERT INTO cars (image1,image2,image3,image4,category,model,color,year,price,engine,capacity,output,transmission,speed,fuel,mileage,drivetrain,details) VALUES ('$target_file1','$target_file2','$target_file3','$target_file4','$category','$model','$color','$year','$price','$engine','$capacity','$output','$transmission','$speed','$fuel','$mileage','$drivetrain','$details' )";
+    if ($conn->query($sql) === TRUE) {
+        echo "Car added successfully!";
     } else {
-        echo "Sorry, there was an error uploading your file.";
+        echo "Error: " . $sql;
     }
+
+    $conn->close();
+} else {
+    echo "Sorry, there was an error uploading your file.";
+}
 
 ?>
 

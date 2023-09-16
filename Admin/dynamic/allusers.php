@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include 'connection.php';?>
+<?php include 'connection.php'; ?>
 
 <head>
   <!-- Required meta tags -->
@@ -26,82 +26,85 @@
   <!-- endinject -->
   <link rel="shortcut icon" href="../images/favicon.png" />
 </head>
+
 <body>
-  
-    <!-- partial:partials/_navbar.html -->
+
+  <!-- partial:partials/_navbar.html -->
 
   <!-- container-scroller -->
   <div class="container">
-<a href="../index.php">back to admin</a>
+    <a href="../index.php">back to admin</a>
 
-  <h2>All Users<small></small></h2>
-  <ul class="responsive-table">
-    <li class="table-header">
-      <div class="col col-1">Id</div>
-      <div class="col col-2">name</div>
-      <div class="col col-3">email</div>
-      <div class="col col-4">Action</div>
-    </li>
-    <?php 
-    $sql = "SELECT * FROM users";
-    $resultforindex = $conn->query($sql); 
-    if(mysqli_num_rows($resultforindex)>0){
-     $data = mysqli_fetch_all($resultforindex, MYSQLI_ASSOC);
-         for($i=0; $i<count($data); $i++){
-    
-    ?>
-    <li class="table-row">
-      <div class="col col-1" data-label="Id"><?php echo $data[$i]["id"];?></div>
-      <div class="col col-2" data-label="Model"><?php echo $data[$i]["name"];?></div>
-      <div class="col col-3" data-label="price"><?php echo $data[$i]["email"];?></div>
-     <div class="col col-4" data-label="category"><a href="deleteuser.php?id=<?php echo $data[$i]['id'];?>" >Delete</a></div>
-    </li>
-    <?php 
-         }} else {
-           ?>
-<h2>there was an error</h2>
-            <?php 
-           }
-           ?> 
-  </ul>
-</div>
+    <h2>All Users<small></small></h2>
+    <ul class="responsive-table">
+      <li class="table-header">
+        <div class="col col-1">Id</div>
+        <div class="col col-2">name</div>
+        <div class="col col-3">email</div>
+        <div class="col col-4">Action</div>
+      </li>
+      <?php
+      $sql = "SELECT * FROM users";
+      $resultforindex = $conn->query($sql);
+      if (mysqli_num_rows($resultforindex) > 0) {
+        $data = mysqli_fetch_all($resultforindex, MYSQLI_ASSOC);
+        for ($i = 0; $i < count($data); $i++) {
 
-<!-- admin data -->
+      ?>
+          <li class="table-row">
+            <div class="col col-1" data-label="Id"><?php echo $data[$i]["id"]; ?></div>
+            <div class="col col-2" data-label="Model"><?php echo $data[$i]["name"]; ?></div>
+            <div class="col col-3" data-label="price"><?php echo $data[$i]["email"]; ?></div>
+            <div class="col col-4" data-label="category"><a href="deleteuser.php?id=<?php echo $data[$i]['id']; ?>">Delete</a></div>
+          </li>
+        <?php
+        }
+      } else {
+        ?>
+        <h2>there was an error</h2>
+      <?php
+      }
+      ?>
+    </ul>
+  </div>
 
-<div class="container">
-  <h2>All Admin Users<small></small></h2>
-  <ul class="responsive-table">
-    <li class="table-header">
-      <div class="col col-1">Id</div>
-      <div class="col col-2">name</div>
-      <div class="col col-3">email</div>
-      <div class="col col-4">password</div>
-    </li>
-    <?php 
-    $sql = "SELECT * FROM admin";
-    $resultforindex = $conn->query($sql); 
-    if(mysqli_num_rows($resultforindex)>0){
-     $data = mysqli_fetch_all($resultforindex, MYSQLI_ASSOC);
-         for($i=0; $i<count($data); $i++){
-    
-    ?>
-    <li class="table-row">
-      <div class="col col-1" data-label="Id"><?php echo $data[$i]["id"];?></div>
-      <div class="col col-2" data-label="Model"><?php echo $data[$i]["name"];?></div>
-      <div class="col col-3" data-label="price"><?php echo $data[$i]["email"];?></div>
-      <div class="col col-4" data-label="category"><?php echo $data[$i]["password"];?></div>
-    </li>
-    <?php 
-         }} else {
-           ?>
-<h2>there was an error</h2>
-            <?php 
-           }
-           ?> 
-  </ul>
-</div>
+  <!-- admin data -->
 
-<!-- plugins:js -->
+  <div class="container">
+    <h2>All Admin Users<small></small></h2>
+    <ul class="responsive-table">
+      <li class="table-header">
+        <div class="col col-1">Id</div>
+        <div class="col col-2">name</div>
+        <div class="col col-3">email</div>
+        <div class="col col-4">password</div>
+      </li>
+      <?php
+      $sql = "SELECT * FROM admin";
+      $resultforindex = $conn->query($sql);
+      if (mysqli_num_rows($resultforindex) > 0) {
+        $data = mysqli_fetch_all($resultforindex, MYSQLI_ASSOC);
+        for ($i = 0; $i < count($data); $i++) {
+
+      ?>
+          <li class="table-row">
+            <div class="col col-1" data-label="Id"><?php echo $data[$i]["id"]; ?></div>
+            <div class="col col-2" data-label="Model"><?php echo $data[$i]["name"]; ?></div>
+            <div class="col col-3" data-label="price"><?php echo $data[$i]["email"]; ?></div>
+            <div class="col col-4" data-label="category"><?php echo $data[$i]["password"]; ?></div>
+          </li>
+        <?php
+        }
+      } else {
+        ?>
+        <h2>there was an error</h2>
+      <?php
+      }
+      ?>
+    </ul>
+  </div>
+
+  <!-- plugins:js -->
   <script src="vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page -->
@@ -125,8 +128,7 @@
 
 
 
-  
+
 </body>
 
 </html>
-
