@@ -61,10 +61,10 @@ if (isset($_SESSION['admin_logged_in'])) {
         </div>
         <div>
           <a class="navbar-brand brand-logo" href="index.php">
-            <img src="images/logo.svg" alt="logo" />
+            <!-- <img src="images/logo.svg" alt="logo" /> -->
           </a>
           <a class="navbar-brand brand-logo-mini" href="index.php">
-            <img src="images/logo-mini.svg" alt="logo" />
+            <!-- <img src="images/logo-mini.svg" alt="logo" /> -->
           </a>
         </div>
       </div>
@@ -129,48 +129,15 @@ if (isset($_SESSION['admin_logged_in'])) {
             </div>
           </li>
           <li class="nav-item dropdown"> 
-            <a class="nav-link count-indicator" id="countDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link count-indicator" id="countDropdown" href="./dynamic/signout.php" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="icon-bell"></i>
               <span class="count"></span>
             </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="countDropdown">
-              <a class="dropdown-item py-3">
-                <p class="mb-0 font-weight-medium float-left">You have 7 unread mails </p>
-                <span class="badge badge-pill badge-primary float-right">View all</span>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <img src="images/faces/face10.jpg" alt="image" class="img-sm profile-pic">
-                </div>
-                <div class="preview-item-content flex-grow py-2">
-                  <p class="preview-subject ellipsis font-weight-medium text-dark">Marian Garner </p>
-                  <p class="fw-light small-text mb-0"> The meeting is cancelled </p>
-                </div>
-              </a>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <img src="images/faces/face12.jpg" alt="image" class="img-sm profile-pic">
-                </div>
-                <div class="preview-item-content flex-grow py-2">
-                  <p class="preview-subject ellipsis font-weight-medium text-dark">David Grey </p>
-                  <p class="fw-light small-text mb-0"> The meeting is cancelled </p>
-                </div>
-              </a>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <img src="images/faces/face1.jpg" alt="image" class="img-sm profile-pic">
-                </div>
-                <div class="preview-item-content flex-grow py-2">
-                  <p class="preview-subject ellipsis font-weight-medium text-dark">Travis Jenkins </p>
-                  <p class="fw-light small-text mb-0"> The meeting is cancelled </p>
-                </div>
-              </a>
-            </div>
+           
           </li>
           <li class="nav-item dropdown d-none d-lg-block user-dropdown">
             <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-              <img class="img-xs rounded-circle" src="images/faces/face8.jpg" alt="Profile image"> </a>
+              <!-- <img class="img-xs rounded-circle" src="images/faces/face8.jpg" alt="Profile image"> </a> -->
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
               <div class="dropdown-header text-center">
                 <img class="img-md rounded-circle" src="images/faces/face8.jpg" alt="Profile image">
@@ -431,7 +398,7 @@ if (isset($_SESSION['admin_logged_in'])) {
                       <a href="./dynamic/allcars.php" class="btn btn-otline-dark align-items-center"><i class=" mdi mdi-account-card-details "></i> Cars</a>
                       <a href="./dynamic/allusers.php" class="btn btn-otline-dark align-items-center"><i class="mdi mdi-account-settings"></i> Users</a>
                       <a href="#" class="btn btn-otline-dark"><i class="icon-printer"></i> Print</a>
-                      <a href="#" class="btn btn-primary text-white me-0"><i class="icon-download"></i> Export</a>
+                      <a href="./dynamic/signout.php" class="btn btn-primary text-white me-0"><i class="mdi mdi-account-remove"></i> Sign Out</a>
                     </div>
                   </div>
                 </div>
@@ -541,22 +508,18 @@ if (isset($_SESSION['admin_logged_in'])) {
   <script>
      
   </script>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Admin Login</title>
-</head>
-<body>
-    <h2>Admin Login</h2>
-    <form action="./dynamic/adminlogprocess.php" method="POST">
-        <label for="username">Username:</label>
-        <input type="text" name="username" required><br><br>
-        <label for="password">Password:</label>
-        <input type="password" name="password" required><br><br>
-        <input type="submit" value="Login">
-    </form>
-</body>
-</html>
+<div class="container">
+    <div class="card">
+        <form action="./dynamic/adminlogprocess.php" method="post" >
+            <input type="text" placeholder="Username" name="username">
+            <input type="password" placeholder="Password" name='password'>
+            <div class="buttons">
+                <button class="register-button">Register</button>
+                <button type="submit" class="login-button" name="submit" >Login</button>
+            </div>
+        </form>
+    </div>
+</div>
 
 <?php 
 }?>

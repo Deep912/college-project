@@ -12,7 +12,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="Untree.co">
-  <link rel="shortcut icon" href="./Admin/dynamic/images/required/BMWlogo.png">
+  <link rel="shortcut icon" href="./images/required/BMWlogo.png">
 
 
   <meta name="description" content="" />
@@ -94,15 +94,15 @@
       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner pics">
           <div class="carousel-item active header_slider1">
-            <img class="d-flex w-100 " src="./Admin/dynamic/images/bmwpicforcars.jpg" alt="First slide">
+            <img class="d-flex w-100 " src="./images/required/bmwpicforcars.jpg" alt="First slide">
           </div>
 
           <div class="carousel-item header_slider1">
-            <img class="d-block w-100" src="./Admin/dynamic/images/required/bmwsec.jpg" alt="Second slide">
+            <img class="d-block w-100" src="./images/required/bmwsec.jpg" alt="Second slide">
           </div>
 
           <div class="carousel-item header_slider1">
-            <img class="d-block w-100" src="./Admin/dynamic/images/required/bmwth.jpg" alt="Third slide">
+            <img class="d-block w-100" src="./images/required/bmwth.jpg" alt="Third slide">
           </div>
         </div>
 

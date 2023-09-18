@@ -3,6 +3,7 @@ include("connection.php");
 
 if (isset($_SESSION['user'])) {
     $email = $_SESSION['email'];
+    $car = $_GET['car'];
     $carid = $_GET['carid'];
     $status = "pending";
     $sql = "SELECT id FROM users WHERE email = '$email'";
