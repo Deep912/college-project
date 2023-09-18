@@ -134,7 +134,7 @@ $row = mysqli_fetch_assoc($result);
             <span><br></span>
             <span><br></span>
 
-            <a href="./dynamic/booking.php?carid=<?php echo $row['id']; ?>$car=<?php echo $row['model'] ?>" class="btn btn-primary">Book Now</a>
+            <a href="./dynamic/booking.php?carid=<?php echo $row['id']; ?>&&car=<?php echo $row['model'] ?>" class="btn btn-primary">Book Now</a>
           <?php } else { ?>
             <span><br></span>
             <span><br></span>

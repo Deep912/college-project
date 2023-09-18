@@ -11,7 +11,7 @@ if (isset($_SESSION['user'])) {
     $row = mysqli_fetch_assoc($result);
     $userid = $row['id'];
     $email = $_SESSION['email'];
-    $sql = "INSERT INTO reservations (carid, userid, status,usermail) VALUES ('$carid', '$userid','$status','$email')";
+    $sql = "INSERT INTO reservations (carid, userid, status,usermail,carmodel) VALUES ('$carid', '$userid','$status','$email','$car')";
 
     if ($conn->query($sql) === TRUE) {
         header("Location: ../profile.php");

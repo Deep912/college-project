@@ -4,23 +4,9 @@
 // Check if the user is logged in (session exists)
 if (isset($_SESSION['user'])) {
   $email = $_SESSION['email'];
-  $sql = "SELECT id FROM users WHERE email = '$email'";
+  $sql = "SELECT * FROM reservations WHERE usermail = '$email'";
   $result = mysqli_query($conn, $sql);
-  $row = mysqli_fetch_assoc($result);
-  $userid = $row['id'];
-  $sql1   = "SELECT carid FROM reservations WHERE userid = '$userid'";
-
-  $result1 = mysqli_query($conn, $sql1);
-  $row1 = mysqli_fetch_assoc($result1);
-
-
-  $carid = $row1['carid'];
-  if (isset($row1)) {
-    $sql2 = "SELECT * FROM cars WHERE id = '$carid'";
-    $result2 = mysqli_query($conn, $sql2);
-    $row2 = mysqli_fetch_assoc($result2);
-    $carname = $row2['model'];
-  }
+  
 
 ?>
   <html lang="en">
@@ -115,19 +101,19 @@ if (isset($_SESSION['user'])) {
 
             <div class="card p-3 py-4">
 
-              <div class="text-center">
-                <img src="https://i.imgur.com/bDLhJiP.jpg" width="100" class="rounded-circle">
-              </div>
-
               <div class="text-center mt-3">
-                <span class="bg-secondary p-1 px-4 rounded text-white">Pro</span>
-                <h5 class="mt-2 mb-0"><?php echo $_SESSION['user']; ?></h5>
+                
+                <h5 class="mt-2 mb-4">Welcome <?php echo $_SESSION['user']; ?></h5>
+                <span class="bg-secondary p-1 px-4 rounded text-white">Your Cars</span>
 
-
-                <div class="px-4 mt-1">
-                  <?php if (isset($carid)) { ?>
-                    <p class="fonts"> <?php echo $carname; ?> </p>
-                    <p class="fonts"> <a href="car.php?id=<?php echo $carid; ?>">more info</a></p>
+                <div class="px-4 mt-1"> <?php
+                $sql = "SELECT carmodel FROM reservations WHERE usermail = '$email'";
+          $resultforindex = $conn->query($sql);
+          if (mysqli_num_rows($resultforindex) > 0) {
+            $data = mysqli_fetch_all($resultforindex, MYSQLI_ASSOC);
+            for ($i = 0; $i < count($data); $i++) { ?>
+                    <h4 class="fonts"> <?php echo $data[$i]['carmodel']; ?> </h4>
+                    <h6 class="fonts"> <a href="car.php?id=<?php echo $carid; ?>">more info</a></h6>
                   <?php } ?>
                 </div>
 
@@ -260,5 +246,5 @@ if (isset($_SESSION['user'])) {
   <a href="login.html">Log in</a>
 <?php
   // You can add a login form or other content for non-logged-in users here
-}
+} }
 ?>
