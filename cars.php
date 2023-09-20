@@ -133,7 +133,7 @@
             for ($i = 0; $i < count($data); $i++) {
           ?>
               <div class="card " style="width: 22rem;">
-                <img class="card-img-top" src="./Admin/dynamic/<?php echo $data[$i]["image1"]; ?>" alt="Card image cap">
+                <img class="card-img-top" src="<?php echo $data[$i]["image1"]; ?>" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title"><?php echo $data[$i]["model"]; ?></h5>
                   <p class="card-text"><?php echo $data[$i]["model"]; ?></p>
@@ -176,7 +176,7 @@
           for ($i = 0; $i < count($data); $i++) {
         ?>
             <div class="card " style="width: 22rem;">
-              <img class="card-img-top" src="./Admin/dynamic/<?php echo $data[$i]["image1"]; ?>" alt="Card image cap">
+              <img class="card-img-top" src="<?php echo $data[$i]["image1"]; ?>" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title"><?php echo $data[$i]["model"]; ?></h5>
                 <p class="card-text"><?php echo $data[$i]["model"]; ?></p>
@@ -218,7 +218,7 @@
           for ($i = 0; $i < count($data); $i++) {
         ?>
             <div class="card " style="width: 22rem;">
-              <img class="card-img-top" src="./Admin/dynamic/<?php echo $data[$i]["image1"]; ?>" alt="Card image cap">
+              <img class="card-img-top" src="<?php echo $data[$i]["image1"]; ?>" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title"><?php echo $data[$i]["model"]; ?></h5>
                 <p class="card-text"><?php echo $data[$i]["model"]; ?></p>

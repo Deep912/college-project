@@ -95,7 +95,7 @@ $row = mysqli_fetch_assoc($result);
     </header>
 
     <div class="header_slider">
-      <img src="./Admin/dynamic/<?php echo $row["image3"]; ?>" class="d-block w-100" style="height: auto;" alt="...">
+      <img src="<?php echo $row["image3"]; ?>" class="d-block w-100" style="height: auto;" alt="...">
       <div class="col-md-12 centered" data-aos="fade-up" data-aos-delay="400">
 
       </div>
@@ -109,7 +109,7 @@ $row = mysqli_fetch_assoc($result);
   <div class="container-card">
     <div class="item">
       <div class="image">
-        <img src="./Admin/dynamic/<?php echo $row["image2"]; ?>" alt="Car 1">
+        <img src="<?php echo $row["image2"]; ?>" alt="Car 1">
       </div>
     </div>
     <div class="item">
@@ -146,7 +146,7 @@ $row = mysqli_fetch_assoc($result);
     </div>
     <div class="item">
       <div class="image">
-        <img src="./Admin/dynamic/<?php echo $row["image1"]; ?>" alt="Car 2">
+        <img src="<?php echo $row["image1"]; ?>" alt="Car 2">
       </div>
     </div>
 
@@ -159,7 +159,7 @@ $row = mysqli_fetch_assoc($result);
   <section class="section ft-feature-1">
     <div class="col-lg-12 col-md-12 justify-content-center">
 
-      <img src="./Admin/dynamic/<?php echo $row["image2"]; ?>" alt="Image" class="img-fluid mb-14 d-block w-auto">
+      <img src="<?php echo $row["image2"]; ?>" alt="Image" class="img-fluid mb-14 d-block w-auto">
 
     </div>
   </section>

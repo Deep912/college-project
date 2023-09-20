@@ -126,7 +126,7 @@
                   <article>
                     <div class="article-wrapper">
                       <figure>
-                        <img src="/stra/Admin/dynamic/<?php echo $data[$i]["image3"]; ?>" alt="" />
+                        <img src="<?php echo $data[$i]["image1"]; ?>" alt="" />
                       </figure>
                       <div class="article-body">
                         <h2><?php echo $data[$i]["model"]; ?></h2>

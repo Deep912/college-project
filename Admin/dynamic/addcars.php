@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $fuel = $_POST["fuel"];
     $mileage = $_POST["mileage"];
     $drivetrain = $_POST["drivetrain"];
-    $details = $_POST["details"];
+    $details = $_POST["detailscar"];
 
     $path = "images/cars/";
 
@@ -36,7 +36,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $target_img3 = $path . basename($_FILES["car_image3"]["name"]);
     $target_img4 = $path . basename($_FILES["car_image4"]["name"]);
 
-    $sql = "INSERT INTO cars (image1,image2,image3,image4,category,model,color,year,price,engine,capacity,output,transmission,speed,fuel,mileage,drivetrain,details) VALUES ('$target_img1','$target_img2','$target_img3','$target_img4','$category','$model','$color','$year','$price','$engine','$capacity','$output','$transmission','$speed','$fuel','$mileage','$drivetrain','$details' )";
+    $sql = "INSERT INTO cars (image1,image2,image3,image4,category,model,color,year,price,engine,capacity,output,transmission,speed,fuel,mileage,drivetrain,detailscar) VALUES 
+    ('$target_img1','$target_img2','$target_img3','$target_img4','$category','$model','$color','$year','$price','$engine','$capacity','$output','$transmission','$speed','$fuel','$mileage','$drivetrain','$details')";
     if ($conn->query($sql) === TRUE) {
         echo "Car added successfully!";
     } else {

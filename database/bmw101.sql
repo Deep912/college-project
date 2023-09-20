@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 12, 2023 at 05:41 AM
+-- Generation Time: Sep 20, 2023 at 02:02 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -54,16 +54,16 @@ CREATE TABLE `cars` (
   `model` varchar(30) NOT NULL,
   `color` varchar(20) NOT NULL,
   `year` varchar(10) NOT NULL,
-  `price` int(10) NOT NULL,
+  `price` varchar(20) NOT NULL,
   `engine` varchar(200) NOT NULL,
-  `capacity` varchar(10) NOT NULL,
+  `capacity` varchar(200) NOT NULL,
   `output` varchar(300) NOT NULL,
   `transmission` varchar(200) NOT NULL,
-  `speed` int(5) NOT NULL,
-  `fuel` varchar(10) NOT NULL,
-  `mileage` int(5) NOT NULL,
+  `speed` int(10) NOT NULL,
+  `fuel` varchar(20) NOT NULL,
+  `mileage` int(20) NOT NULL,
   `drivetrain` varchar(30) NOT NULL,
-  `details` varchar(400) NOT NULL,
+  `detailscar` varchar(1000) NOT NULL,
   `image1` varchar(100) NOT NULL,
   `image2` varchar(100) NOT NULL,
   `image3` varchar(100) NOT NULL,
@@ -74,11 +74,31 @@ CREATE TABLE `cars` (
 -- Dumping data for table `cars`
 --
 
-INSERT INTO `cars` (`id`, `category`, `model`, `color`, `year`, `price`, `engine`, `capacity`, `output`, `transmission`, `speed`, `fuel`, `mileage`, `drivetrain`, `details`, `image1`, `image2`, `image3`, `image4`) VALUES
-(1, '', 'm8', '', '2023', 1200000, 'v12', '', '', '', 0, '', 0, '', '', '../../images/cars/_content_dam_bmw_marketBMW_M_common_topics_magazine-article-pool_2022_wallpaper-up', '../../images/cars/_content_dam_bmw_marketBMW_M_common_topics_magazine-article-pool_2022_wallpaper-up', '../../images/cars/BMW M5 Rear View.jpg', ''),
-(2, '', '', '', '', 0, '', '', '', '', 0, '', 0, '', '', 'images/cars/', 'images/cars/', 'images/cars/bmwsec.jpg', ''),
-(3, 'suv', 'x5', '', '2022', 0, '', '', '', '', 0, '', 0, '', '', 'images/cars/third.jpg', 'images/cars/', 'images/cars/', 'images/cars/'),
-(4, 'sports', 'BMW M4 GT4.', 'white', '2022', 12000, 'Six-cylinder in-line', '2,993 cc', 'Up to 405 kW (550 hp) and 650 Nm torque (depending on regulations)', '7-speed automatic gearbox by ZF with motorsport software, DREXLER limited slip differential with separate temperature controlled auxiliary cooling, motorsport optimised driveshafts', 350, 'patrol', 0, '4 wheel drive (4WD)', 'From 2023, private teams and drivers around the world will line up with the new BMW M4 GT4. This car was developed to win races and titles.', 'images/cars/forth.jpg', 'images/cars/first.jpg', 'images/cars/third.jpg', 'images/cars/secondimg.jpg');
+INSERT INTO `cars` (`id`, `category`, `model`, `color`, `year`, `price`, `engine`, `capacity`, `output`, `transmission`, `speed`, `fuel`, `mileage`, `drivetrain`, `detailscar`, `image1`, `image2`, `image3`, `image4`) VALUES
+(8, 'suv', 'x5', 'white', '2022', '2.22 crore', 'Six-cylinder in-line with M TwinPower turbo technology, four valves per cylinder, direct injection, Valvetronic, lubricants from RAVENOL', '4395 cc, 8 Cylinders In V Shape, 4 Valves/Cylinder, DOHC', 'Up to 405 kW (550 hp) and 650 Nm torque (depending on regulations)', '7-speed automatic gearbox by ZF with motorsport software, DREXLER limited slip differential with separate temperature controlled auxiliary cooling, motorsport optimised driveshafts', 350, 'patrol', 9, '4 wheel drive (4WD)', '       fuck you jadu       ', 'images/cars/imgbmw.jpg', 'images/cars/banner.jpg', 'images/cars/slider.jpg', 'images/cars/engine.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `reservations`
+--
+
+CREATE TABLE `reservations` (
+  `id` int(100) NOT NULL,
+  `userid` int(100) NOT NULL,
+  `usermail` varchar(30) NOT NULL,
+  `carid` int(100) NOT NULL,
+  `status` varchar(10) NOT NULL,
+  `carmodel` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `reservations`
+--
+
+INSERT INTO `reservations` (`id`, `userid`, `usermail`, `carid`, `status`, `carmodel`) VALUES
+(7, 5, 'demo@gmail.com', 7, 'pending', 'BMW X5 xDrive30d'),
+(8, 5, 'demo@gmail.com', 4, 'pending', 'BMW M4 GT4.');
 
 -- --------------------------------------------------------
 
@@ -95,13 +115,6 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `name`, `email`, `phone`, `password`) VALUES
-(1, 'deep', 'deep@gmail.com', 2147483647, '900150983cd24fb0d6963f7d28e17f72');
-
---
 -- Indexes for dumped tables
 --
 
@@ -115,6 +128,12 @@ ALTER TABLE `admin`
 -- Indexes for table `cars`
 --
 ALTER TABLE `cars`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `reservations`
+--
+ALTER TABLE `reservations`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -138,13 +157,19 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `cars`
 --
 ALTER TABLE `cars`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `reservations`
+--
+ALTER TABLE `reservations`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
