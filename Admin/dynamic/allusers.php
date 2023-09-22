@@ -3,47 +3,47 @@
 <?php include 'connection.php'; ?>
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Star Admin2 </title>
-  <!-- plugins:css -->
-  <link rel="stylesheet" href="../vendors/feather/feather.css">
-  <link rel="stylesheet" href="../vendors/mdi/css/materialdesignicons.min.css">
-  <link rel="stylesheet" href="../vendors/ti-icons/css/themify-icons.css">
-  <link rel="stylesheet" href="../vendors/typicons/typicons.css">
-  <link rel="stylesheet" href="../vendors/simple-line-icons/css/simple-line-icons.css">
-  <link rel="stylesheet" href="../vendors/css/vendor.bundle.base.css">
-  <!-- endinject -->
-  <!-- Plugin css for this page -->
-  <link rel="stylesheet" href="../vendors/datatables.net-bs4/dataTables.bootstrap4.css">
-  <link rel="stylesheet" href="../js/select.dataTables.min.css">
-  <!-- css for table -->
-  <link rel="stylesheet" href="../css/allcarsstyle.css">
-  <!-- End plugin css for this page -->
-  <!-- inject:css -->
-  <link rel="stylesheet" href="../css/vertical-layout-light/style.css">
-  <!-- endinject -->
-  <link rel="shortcut icon" href="../images/favicon.png" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Star Admin2 </title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../vendors/feather/feather.css">
+    <link rel="stylesheet" href="../vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="../vendors/typicons/typicons.css">
+    <link rel="stylesheet" href="../vendors/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="../vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="../vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="../js/select.dataTables.min.css">
+    <!-- css for table -->
+    <link rel="stylesheet" href="../css/allcarsstyle.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="../css/vertical-layout-light/style.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="../images/favicon.png" />
 </head>
 
 <body>
 
-  <!-- partial:partials/_navbar.html -->
+    <!-- partial:partials/_navbar.html -->
 
-  <!-- container-scroller -->
-  <div class="container">
-    <a href="../index.php">back to admin</a>
+    <!-- container-scroller -->
+    <div class="container">
+        <a href="../index.php">back to admin</a>
 
-    <h2>All Users<small></small></h2>
-    <ul class="responsive-table">
-      <li class="table-header">
-        <div class="col col-1">Id</div>
-        <div class="col col-2">name</div>
-        <div class="col col-3">email</div>
-        <div class="col col-4">Action</div>
-      </li>
-      <?php
+        <h2>All Users<small></small></h2>
+        <ul class="responsive-table">
+            <li class="table-header">
+                <div class="col col-1">Id</div>
+                <div class="col col-2">name</div>
+                <div class="col col-3">email</div>
+                <div class="col col-4">Action</div>
+            </li>
+            <?php
       $sql = "SELECT * FROM users";
       $resultforindex = $conn->query($sql);
       if (mysqli_num_rows($resultforindex) > 0) {
@@ -51,35 +51,36 @@
         for ($i = 0; $i < count($data); $i++) {
 
       ?>
-          <li class="table-row">
-            <div class="col col-1" data-label="Id"><?php echo $data[$i]["id"]; ?></div>
-            <div class="col col-2" data-label="Model"><?php echo $data[$i]["name"]; ?></div>
-            <div class="col col-3" data-label="price"><?php echo $data[$i]["email"]; ?></div>
-            <div class="col col-4" data-label="category"><a href="deleteuser.php?id=<?php echo $data[$i]['id']; ?>">Delete</a></div>
-          </li>
-        <?php
+            <li class="table-row">
+                <div class="col col-1" data-label="Id"><?php echo $data[$i]["id"]; ?></div>
+                <div class="col col-2" data-label="Model"><?php echo $data[$i]["name"]; ?></div>
+                <div class="col col-3" data-label="price"><?php echo $data[$i]["email"]; ?></div>
+                <div class="col col-4" data-label="category"><a
+                        href="deleteuser.php?id=<?php echo $data[$i]['id']; ?>">Delete</a></div>
+            </li>
+            <?php
         }
       } else {
         ?>
-        <h2>there was an error</h2>
-      <?php
+            <h2>there was an error</h2>
+            <?php
       }
       ?>
-    </ul>
-  </div>
+        </ul>
+    </div>
 
-  <!-- admin data -->
+    <!-- admin data -->
 
-  <div class="container">
-    <h2>All Admin Users<small></small></h2>
-    <ul class="responsive-table">
-      <li class="table-header">
-        <div class="col col-1">Id</div>
-        <div class="col col-2">name</div>
-        <div class="col col-3">email</div>
-        <div class="col col-4">password</div>
-      </li>
-      <?php
+    <div class="container">
+        <h2>All Admin Users<small></small></h2>
+        <ul class="responsive-table">
+            <li class="table-header">
+                <div class="col col-1">Id</div>
+                <div class="col col-2">name</div>
+                <div class="col col-3">email</div>
+                <div class="col col-4">password</div>
+            </li>
+            <?php
       $sql = "SELECT * FROM admin";
       $resultforindex = $conn->query($sql);
       if (mysqli_num_rows($resultforindex) > 0) {
@@ -87,44 +88,44 @@
         for ($i = 0; $i < count($data); $i++) {
 
       ?>
-          <li class="table-row">
-            <div class="col col-1" data-label="Id"><?php echo $data[$i]["id"]; ?></div>
-            <div class="col col-2" data-label="Model"><?php echo $data[$i]["name"]; ?></div>
-            <div class="col col-3" data-label="price"><?php echo $data[$i]["email"]; ?></div>
-            <div class="col col-4" data-label="category"><?php echo $data[$i]["password"]; ?></div>
-          </li>
-        <?php
+            <li class="table-row">
+                <div class="col col-1" data-label="Id"><?php echo $data[$i]["id"]; ?></div>
+                <div class="col col-2" data-label="Model"><?php echo $data[$i]["name"]; ?></div>
+                <div class="col col-3" data-label="price"><?php echo $data[$i]["email"]; ?></div>
+                <div class="col col-4" data-label="category"><?php echo $data[$i]["password"]; ?></div>
+            </li>
+            <?php
         }
       } else {
         ?>
-        <h2>there was an error</h2>
-      <?php
+            <h2>there was an error</h2>
+            <?php
       }
       ?>
-    </ul>
-  </div>
+        </ul>
+    </div>
 
-  <!-- plugins:js -->
-  <script src="vendors/js/vendor.bundle.base.js"></script>
-  <!-- endinject -->
-  <!-- Plugin js for this page -->
-  <script src="vendors/chart.js/Chart.min.js"></script>
-  <script src="vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
-  <script src="vendors/progressbar.js/progressbar.min.js"></script>
+    <!-- plugins:js -->
+    <script src="vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="vendors/chart.js/Chart.min.js"></script>
+    <script src="vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="vendors/progressbar.js/progressbar.min.js"></script>
 
-  <!-- End plugin js for this page -->
-  <!-- inject:js -->
-  <script src="js/off-canvas.js"></script>
-  <script src="js/hoverable-collapse.js"></script>
-  <script src="js/template.js"></script>
-  <script src="js/settings.js"></script>
-  <script src="js/todolist.js"></script>
-  <!-- endinject -->
-  <!-- Custom js for this page-->
-  <script src="js/jquery.cookie.js" type="text/javascript"></script>
-  <script src="js/dashboard.js"></script>
-  <script src="js/Chart.roundedBarCharts.js"></script>
-  <!-- End custom js for this page-->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="js/off-canvas.js"></script>
+    <script src="js/hoverable-collapse.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <script src="js/jquery.cookie.js" type="text/javascript"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/Chart.roundedBarCharts.js"></script>
+    <!-- End custom js for this page-->
 
 
 
